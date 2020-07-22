@@ -8,15 +8,16 @@ violinA = \new Staff \with {
   \time 4/4
   \key g \major
 
-  \relative d'' {
-    d8 g a b d, g a b |
-    d8 c c b c2 |
-    e,8 a b c e, a b c |
-    e8 d d cs d2 |
-    b8 c d g, e'2 |
-    a,8 b c fs, d'2 |
-    g,8 a b e, c' b b a |
-    a8 g fs g g2 |
+  \relative d' {
+    d8 c b c g'4-. g-. |
+    d8 c b c fs4-. fs-. |
+    d8 c b c e4-. d-. |
+    c4-. d-. b( a) |
+
+    d8 c b c a'4-. a-. |
+    d,8 c b c g'4-. g-. |
+    a8 g fs e d4-. cs-. |
+    d4-. e-. d2 |
   }
 }
 
@@ -25,11 +26,8 @@ violinB = \new Staff \with {
 } {
   \clef "treble"
   \time 4/4
-  \key d \major
+  \key g \major
 
-  \relative d'' {
-
-  }
 }
 
 viola = \new Staff \with {
@@ -39,19 +37,23 @@ viola = \new Staff \with {
   \time 4/4
   \key g \major
 
-  \relative d'' {
-
-  }
 }
 
 cello = \new Staff \with {
   instrumentName = "Cello"
 } {
-  \clef "treble"
+  \clef "bass"
   \time 4/4
   \key g \major
 
-  \relative d'' {
+  \relative g, {
+    g4-. b-. d-. d-. |
+    g,4-. b-. c-. c-. |
+    e,4-. b'-. c-. c-. |
+    d,4-. a'-. g( d') |
+
+    e4-. d-. c-. c-. |
+    e4-. d-. b-. b-. |
 
   }
 }
