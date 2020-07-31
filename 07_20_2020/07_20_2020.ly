@@ -27,7 +27,22 @@ violinA = \new Staff \with {
     e8( g b4-.) d4-. |
     e,8( g b4-.) cs4-. |
     b8( a) gs-. gs-. a4-. |
+    d2.-. |
     
+    r1 |
+    r1 |
+    r1 |
+    r1 |
+
+    r1 |
+    r1 |
+
+    r1 |
+    r1 |
+
+    g,,1 |
+    fs8( e d cs) d( cs b cs) |
+    d( cs b cs) d( c b c) |
   }
 }
 
@@ -57,7 +72,18 @@ violinB = \new Staff \with {
     e4-. g-. b,-. |
     e4-. g-. a,-. |
     r8 a4-. b8-. c4-. |
-    
+    d2.-. |
+
+    r1 |
+    r1 |
+    r1 |
+    r1 |
+
+    r1 |
+    r1 |
+
+    f,1 |
+    e8 d c bf c2 |
   }
 }
 
@@ -88,6 +114,17 @@ viola = \new Staff \with {
     cs'8( b cs d cs b |
     a8 g a b a g |
     fs e b'4-.) e,-. |
+    fs2.-. |
+
+    \time 4/4
+    r1 |
+    r1 |
+    r1 |
+    r1 |
+
+    ef'1 |
+    d8 c bf a bf2 |
+
   }
 }
 
@@ -118,7 +155,13 @@ cello = \new Staff \with {
     e,4-. d'8( cs g4-.) |
     e4-. cs'8( b fs4-.) |
     g8( fs f4-.) a,-. |
+    d,2.-. |
 
+    \time 4/4
+    d''1 |
+    c8 bf a g a2 |
+    d,8 e f a4 g f8 |
+    f2 e 
   }
 }
 
