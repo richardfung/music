@@ -13,30 +13,40 @@ music = \new PianoStaff <<
   \new Staff = "down" {
     \clef "bass"
     \time 3/4
-    \relative fs {
+    \relative fs, {
       \key fs \minor
       <fs fs' a cs>2. |
       <b, fs'' d' fs> |
-      <es, gs'' cs es> |
-      <fs fs'' a cs> |
+      <es gs' cs es> |
+      <fs fs' a cs> |
 
-      <a fs'' a cs> |
-      <b a'' b d a'> |
-      <cs b'' cs es gs> |
+      <a fs' a cs> |
+      <b a' b d a'> |
+      <cs b' cs es gs> |
 
+      \time 2/4
       % \key a \major
-      <a a'' cs e a>2 <cs, cs'' e gs cs>4 |
-      <e' gs'' cs e gs>2 <d, b''' d fs b>4 |
-      <b' fs'' b d fs>2 <f a'' d f a>4 |
-      <b a'' d f a>2 <d b'' d f gs>4 |
+      <a a' cs e a>4 <cs, cs'' e gs cs> |
+      <e' gs cs e gs> <d, b'' d fs b> |
+      <b' fs' b d fs> <f a' d f a> |
+      <d' a' d f a> <d, b'' d f gs> |
 
-      <a a'' cs e a>2 <cs, cs'' e gs cs>4 |
-      <e' gs'' cs e gs>2 <d, b''' d fs b>4 |
-      <b' fs'' b d fs> 2<f a'' d f a>4 |
-      <b b'' d f gs>2. |
+      <a' a' cs e a> <cs, cs'' e gs cs> |
+      <e' gs cs e gs> <d, b'' d fs b> |
+      <b' fs' b d fs> <f a' d f a> |
+      <f b' d f gs>2 |
 
-      \key fs \minor
+      \time 3/4
+      % \key fs \minor
       <fs fs' a cs>2. |
+      <b, fs'' d' fs> |
+      <es gs' cs es> |
+      <fs fs' a cs> |
+
+      <a fs' a cs> |
+      <b a' b d a'> |
+      <cs b' cs es gs> |
+      <fs, fs' a cs fs> |
     }
 
     \time 2/4
