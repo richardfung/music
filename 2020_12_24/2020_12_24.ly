@@ -6,16 +6,90 @@ music = \new PianoStaff <<
   \new Staff = "up" {
     \time 3/4
     \key fs \minor
-    << \new Voice \relative cs'' {
+    << \new Voice {
       \voiceOne
-      c2 fs8 es |
-      d2
+
+      \relative cs'' {
+        cs2 fs8 es |
+        d2 r4 |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+      }
+
+      \time 2/4
+      \relative a'' {
+        a4 cs |
+        gs b |
+        fs a |
+        a gs |
+
+        a' cs |
+        gs b |
+        fs a |
+        gs2 |
+      }
+
+      \time 3/4
+      \relative cs'' {
+        cs2 fs8 es |
+        d2 r4 |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+      }
+
+
     } \\
-    \new Voice \relative fs' {
+    \new Voice {
       \voiceTwo
-      <fs a>8 q <es gs> <fs a> q <es gs> |
-      <fs b>8 q
+
+      \time 3/4
+      \relative fs' {
+        <fs a>8 q <es gs> <fs a> q <es gs> |
+        <fs b>8 q r2 |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+      }
+
+      \time 2/4
+      \relative e'' {
+        \tuplet 3/2 4 {
+          r8 e d r fs e |
+          r2. |
+          r |
+          r |
+          r |
+          r |
+          r |
+          r |
+        }
+      }
+
+      \time 3/4
+      \relative fs' {
+        <fs a>8 q <es gs> <fs a> q <es gs> |
+        <fs b>8 q r2 |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+      }
     } >>
+
+    \time 2/4
+    \relative c' {
+    }
   }
 
   \new Staff = "down" {
@@ -120,7 +194,7 @@ music = \new PianoStaff <<
     \music
     \layout {}
     \midi {
-      \tempo 4=80
+      \tempo 8=100
     }
   }
 }
