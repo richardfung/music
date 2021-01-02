@@ -5,6 +5,7 @@ music = \new PianoStaff <<
   \accidentalStyle piano-cautionary
   \new Staff = "up" {
     \time 3/4
+    \tempo 4=60
     \key fs \minor
     << \new Voice {
       \voiceOne
@@ -51,7 +52,7 @@ music = \new PianoStaff <<
 
       \time 3/4
       \relative fs' {
-        <fs a>8 q <es gs> <fs a> q <es gs> |
+        <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b>8 q r2 |
         r2. |
         r2. |
@@ -87,18 +88,28 @@ music = \new PianoStaff <<
       }
     } >>
 
+    % Middle Section.
     \time 2/4
-    \relative c' {
+    \tempo 4=80
+    \relative e' {
+      e4 ds8 e |
+      b' a g4 |
+      fs g8 c, |
+      g'4 f |
+
+      e4 ds4 |
+      e8 c g' f |
+      e4 gs |
     }
   }
 
   \new Staff = "down" {
     \clef "bass"
-    \relative fs, {
+    \relative fs,, {
       \time 3/4
       \key fs \minor
-      <fs fs' a cs>2. |
-      <b, fs'' d' fs> |
+      fs4 <fs'' a> <es gs> |
+      <b, fs'' d' fs>2. |
       <es gs' cs es> |
       <fs fs' a cs> |
 
@@ -137,12 +148,11 @@ music = \new PianoStaff <<
       <c c' e g>2 |
       <g b' f' g> |
       <b b' f gs> |
-      <c c' e g> |
+      <g f' gs b> |
 
-      <e c' e g> |
-      <g, b' f' g> |
-      <b b' f gs> |
       <c c' e g> |
+      <g b' f' g> |
+      <b b' f gs> |
 
       \time 3/4
       \key a \minor
@@ -194,7 +204,7 @@ music = \new PianoStaff <<
     \music
     \layout {}
     \midi {
-      \tempo 8=100
+      % \tempo 8=100
     }
   }
 }
