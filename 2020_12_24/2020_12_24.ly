@@ -12,12 +12,12 @@ music = \new PianoStaff <<
 
       \relative cs'' {
         cs2 fs8 es |
-        d2 r4 |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
+        d2 fs8 es |
+        d8 cs cs2 |
+        b8 a es4 gs |
+        cs2 fs8 es |
+        d2 b'8 a |
+        gs4 b es |
       }
 
       \time 2/4
@@ -97,7 +97,7 @@ music = \new PianoStaff <<
       fs g8 c, |
       g'4 f |
 
-      e4 ds4 |
+      e8 ds e4 |
       e8 c g' f |
       e4 gs |
     }
