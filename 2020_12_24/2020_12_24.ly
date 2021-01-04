@@ -109,11 +109,11 @@ music = \new PianoStaff <<
       \time 3/4
       \key fs \minor
       fs4 <fs'' a> <es gs> |
-      <b, fs'' d' fs>2. |
-      <es gs' cs es> |
-      <fs fs' a cs> |
+      b, <b'' d> <d, fs> |
+      es, <a' cs> <fs a> |
+      fs, <a' cs> <fs a> |
 
-      <a fs' a cs> |
+      <a fs' a cs>2. |
       <b a' b d a'> |
       <cs b' cs es gs> |
 
@@ -142,15 +142,15 @@ music = \new PianoStaff <<
       <fs, a' cs fs a> |
     }
 
-    \relative c {
+    \relative c' {
       \time 2/4
       \key c \major
-      <c c' e g>2 |
-      <g b' f' g> |
-      <b b' f gs> |
-      <g f' gs b> |
+      <c e>8 g' c,,4-. |
+      <b' f'>8 g d,4-. |
+      <d'' f>8 b' b,,4-. |
+      <d' f>8 gs g, g' |
 
-      <c c' e g> |
+      <c c' e g>2 |
       <g b' f' g> |
       <b b' f gs> |
 
