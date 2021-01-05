@@ -95,11 +95,11 @@ music = \new PianoStaff <<
       e4 ds8 e |
       b' a g4 |
       fs g8 c, |
-      g'4 f |
+      g'4 fs |
 
-      e8 ds e4 |
-      e8 c g' f |
-      e4 gs |
+      f4 e8 f |
+      e'8 d c4 |
+      b2 |
     }
   }
 
@@ -110,12 +110,12 @@ music = \new PianoStaff <<
       \key fs \minor
       fs4 <fs'' a> <es gs> |
       b, <b'' d> <d, fs> |
-      es, <a' cs> <fs a> |
+      es, <gs' cs> <gs b> |
       fs, <a' cs> <fs a> |
 
-      <a fs' a cs>2. |
-      <b a' b d a'> |
-      <cs b' cs es gs> |
+      a,, <a'' cs> <cs es> |
+      b,, <fs'' b> <a d> |
+      cs,, <gs'' cs> <b gs'> |
 
       \time 2/4
       % \key a \major
