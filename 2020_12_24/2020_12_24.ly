@@ -27,10 +27,12 @@ music = \new PianoStaff <<
         fs a |
         a gs |
 
+        \ottava 1
         a' cs |
         gs b |
         fs a |
         gs2 |
+        \ottava 0
       }
 
       \time 3/4
@@ -68,10 +70,13 @@ music = \new PianoStaff <<
           r2. |
           r |
           r |
+
+          \ottava 1
           r |
           r |
           r |
           r |
+          \ottava 0
         }
       }
 
@@ -116,11 +121,17 @@ music = \new PianoStaff <<
       a,, <a'' cs> <cs es> |
       b,, <fs'' b> <a d> |
       cs,, <gs'' cs> <b gs'> |
+    }
 
+    \relative a {
       \time 2/4
       % \key a \major
-      <a a' cs e a>4 <cs, cs'' e gs cs> |
-      <e' gs cs e gs> <d, b'' d fs b> |
+      <a cs e a>8 e( <cs gs' cs>) a''( |
+      <cs, e gs>) d,( <b fs' b>) cs''( |
+      % <fs, b d> b,( <f d' f>4) |
+
+      % <a cs e a>4 <cs, cs'' e gs cs> |
+      % <e' gs cs e gs> <d, b'' d fs b> |
       <b' fs' b d fs> <f a' d f a> |
       <d' a' d f a> <d, b'' d f gs> |
 
@@ -128,7 +139,9 @@ music = \new PianoStaff <<
       <e' gs cs e gs> <d, b'' d fs b> |
       <b' fs' b d fs> <f a' d f a> |
       <f b' d f gs>2 |
+   }
 
+    \relative fs,, {
       \time 3/4
       % \key fs \minor
       <fs fs' a cs>2. |
