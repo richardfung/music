@@ -64,15 +64,15 @@ music = \new PianoStaff <<
       }
 
       \time 2/4
-      \relative e'' {
-        \tuplet 3/2 4 {
-          r8 e d r fs e |
-          r2. |
-          r |
-          r |
+      \relative a'' {
+        a8 e cs' e, |
+        gs d b' d, |
+        fs b, a' b, |
+        a d, gs d |
 
+        \tuplet 3/2 4 {
           \ottava 1
-          r |
+          r2. |
           r |
           r |
           r |
@@ -126,16 +126,12 @@ music = \new PianoStaff <<
     \relative a {
       \time 2/4
       % \key a \major
-      <a cs e a>8 e( <cs gs' cs>) a''( |
-      <cs, e gs>) d,( <b fs' b>) cs''( |
-      % <fs, b d> b,( <f d' f>4) |
-
-      % <a cs e a>4 <cs, cs'' e gs cs> |
-      % <e' gs cs e gs> <d, b'' d fs b> |
+      <a cs e a>4 <cs, cs'' e gs cs> |
+      <e' gs cs e gs> <d, b'' d fs b> |
       <b' fs' b d fs> <f a' d f a> |
       <d' a' d f a> <d, b'' d f gs> |
 
-      <a' a' cs e a> <cs, cs'' e gs cs> |
+      <a' a' cs e a>4) <cs, cs'' e gs cs> |
       <e' gs cs e gs> <d, b'' d fs b> |
       <b' fs' b d fs> <f a' d f a> |
       <f b' d f gs>2 |
