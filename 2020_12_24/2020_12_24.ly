@@ -22,17 +22,14 @@ music = \new PianoStaff <<
 
       \time 2/4
       \relative a'' {
-        a4 cs |
-        gs b |
-        fs a |
-        a gs |
-
-        \ottava 1
-        a' cs |
-        gs b |
-        fs a |
-        gs2 |
-        \ottava 0
+        r2
+        r2
+        r2
+        r2
+        r2
+        r2
+        r2
+        r2
       }
 
       \time 3/4
@@ -65,19 +62,18 @@ music = \new PianoStaff <<
 
       \time 2/4
       \relative a'' {
-        a8 e cs' e, |
-        gs d b' d, |
-        fs b, a' b, |
-        a d, gs d |
+        a16 a, a' cs, cs' cs, cs' e, |
+        gs gs, gs' d b' b, b' fs |
+        fs fs, fs' b, a' a, a' d, |
+        b d f gs
+            \ottava 1
+            b d f gs |
 
-        \tuplet 3/2 4 {
-          \ottava 1
-          r2. |
-          r |
-          r |
-          r |
-          \ottava 0
-        }
+        a a, a' cs, cs' cs, cs' e, |
+        gs gs, gs' d b' b, b' fs |
+        fs fs, fs' b, a' a, a' d, |
+        a a' f, f' d, d' f,, f' |
+        \ottava 0
       }
 
       \time 3/4
@@ -131,7 +127,7 @@ music = \new PianoStaff <<
       <b' fs' b d fs> <f a' d f a> |
       <d' a' d f a> <d, b'' d f gs> |
 
-      <a' a' cs e a>4) <cs, cs'' e gs cs> |
+      <a' a' cs e a>4 <cs, cs'' e gs cs> |
       <e' gs cs e gs> <d, b'' d fs b> |
       <b' fs' b d fs> <f a' d f a> |
       <f b' d f gs>2 |
