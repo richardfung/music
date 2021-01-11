@@ -94,14 +94,14 @@ music = \new PianoStaff <<
     \time 4/4
     \tempo 4=80
     \relative e' {
-      e2 ds4 e |
-      b' a g2 |
-      fs g4 c, |
-      g'2 fs |
+      e4 ds8 e b' a g4 |
+      fs g8 c, g'4 fs |
+      f4 e8 f e' d c4 |
+      b as a gs |
 
-      f2 e4 f |
-      e'4 d c2 |
-      b1 |
+      e4 ds8 e b' a g4 |
+      fs g8 c, g'4 fs |
+      f4 e8 f e' d c b |
     }
   }
 
