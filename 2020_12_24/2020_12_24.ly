@@ -14,22 +14,21 @@ music = \new PianoStaff <<
         cs2 fs8 es |
         d2 fs8 es |
         d8 cs cs2 |
-        b8 a es4 gs |
+        b8 as a es gs4 |
         cs2 fs8 es |
         d2 b'8 a |
         gs4 b es |
       }
 
-      \time 2/4
       \relative a'' {
-        r2
-        r2
-        r2
-        r2
-        r2
-        r2
-        r2
-        r2
+        r2.
+        r2.
+        r2.
+        r2.
+        r2.
+        r2.
+        r2.
+        r2.
       }
 
       \time 3/4
@@ -52,32 +51,29 @@ music = \new PianoStaff <<
       \time 3/4
       \relative fs' {
         <fs a>8 q <es gs> <fs a> q <gs b> |
-        <fs b>8 q r2 |
-        r2. |
-        r2. |
+        <fs b> q <g bf> <fs b> <fs a> <gs b> |
+        <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
+        <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
         r2. |
         r2. |
         r2. |
       }
 
-      \time 2/4
-      \relative a'' {
-        a16 a, a' cs, cs' cs, cs' e, |
-        gs gs, gs' d b' b, b' d, |
-        fs fs, fs' b, a' a, a' d, |
-        b d f gs
-            \ottava 1
-            b d f gs |
+      \relative a' {
+        \tempo 4=120
+        <a a'>8 <cs cs'> <a a'> r <cs cs'>4 |
+        <gs gs'>8 <b b'> <gs gs'> r <b b'>4 |
+        r2.
+        r2.
 
-        a a, a' cs, cs' cs, cs' e, |
-        gs gs, gs' d b' b, b' d, |
-        fs fs, fs' b, a' a, a' <d, f> |
-        <f a> a, <d f> f,
-            \ottava 0
-            <b d> d, <d f> f, |
+        r2.
+        r2.
+        r2.
+        r2.
       }
 
       \time 3/4
+      \tempo 4=60
       \relative fs' {
         <fs a>8 q <es gs> <fs a> q <es gs> |
         <fs b>8 q r2 |
@@ -92,16 +88,27 @@ music = \new PianoStaff <<
 
     % Middle Section.
     \time 4/4
+    \key c \major
     \tempo 4=80
-    \relative e' {
-      e4 ds8 e b' a g4 |
-      fs g8 c, g'4 fs |
-      f4 e8 f e' d c4 |
-      b as a gs |
+    \relative e'' {
+      <e c'>8 q q q q <e e'> <e d'> <e c'> |
+      r1 |
+      r1 |
+      r1 |
+      r1 |
 
-      e4 ds8 e b' a g4 |
-      fs g8 c, g'4 fs |
-      f4 e8 f e' d c b |
+      r1 |
+      r1 |
+      r1 |
+
+      % <c e g c>1 |
+      % <b d f g>1 |
+      % <b d f gs>1 |
+      % <b d f gs>1 |
+
+      % <c c' e g>1 |
+      % <g b' f' g> |
+      % <b b' f gs> |
     }
   }
 
@@ -110,28 +117,27 @@ music = \new PianoStaff <<
     \relative fs,, {
       \time 3/4
       \key fs \minor
-      fs4 <fs'' a> <es gs> |
-      b, <b'' d> <d, fs> |
-      es, <gs' cs> <gs b> |
-      fs, <a' cs> <fs a> |
+      fs4 <fs'' a>8 <es gs> <cs b'>4 |
+      b, <b'' d>8 <fs b> <d fs>4 |
+      es, <gs' cs fs> <gs b> |
+      fs, <a' cs> <d, fs a> |
 
-      a,, <a'' cs> <cs es> |
+      fs, <a' cs> <cs es> |
       b,, <fs'' b> <a d> |
       cs,, <gs'' cs> <b gs'> |
     }
 
     \relative a {
-      \time 2/4
       % \key a \major
-      <a cs e a>4 <cs e gs cs> |
-      <e, gs cs e> <b' d fs b> |
-      <d, fs b d> <a' d f a> |
-      <f a d f> <d f gs b> |
+      <a cs e a>2 <cs e gs cs>4 |
+      <e, gs cs e>2 <b' d fs b>4 |
+      <d, fs b d>2 <a' d f a>4 |
+      <f a d f>2 <d f gs b>4 |
 
-      <a cs e a>4 <cs e gs cs> |
-      <e, gs cs e> <b' d fs b> |
-      <d, fs b d> <a' d f a> |
-      <gs b d f> <f gs b d> |
+      <a cs e a>2 <cs e gs cs>4 |
+      <e, gs cs e>2 <b' d fs b>4 |
+      <d, fs b d>2 <a' d f a>4 |
+      <gs b d f>2 <f gs b d>4 |
 
       % <a cs e a>4 <cs, cs'' e gs cs> |
       % <e' gs cs e gs> <d, b'' d fs b> |
@@ -159,17 +165,26 @@ music = \new PianoStaff <<
       <fs, a' cs fs a> |
     }
 
-    \relative c' {
+    \relative a {
       \time 4/4
       \key c \major
-      <c e>4 g' c,,2-. |
-      <b' f'>4 g d,2-. |
-      <d'' f>4 b' b,,2-. |
-      <d' f>4 gs g, g' |
+      % <c e g c>1 |
+      % <b d f g>1 |
+      % <b d f gs>1 |
+      % <b d f gs>1 |
 
-      <c c' e g>1 |
-      <g b' f' g> |
-      <b b' f gs> |
+      % <c c' e g>1 |
+      % <g b' f' g> |
+      % <b b' f gs> |
+
+      a8 b c r e,4 f |
+      b8 c d r g,4 gs|
+      f'8 e d r a4 gs |
+      e'8 d c r gs2 |
+
+      a8 b c r e,4 f |
+      b8 c d r g,4 gs|
+      f'8 e d r a4 gs |
 
       \key a \minor
       <a a' c e a>2 <c, c'' e gs c> |
