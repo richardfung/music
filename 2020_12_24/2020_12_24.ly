@@ -4,7 +4,7 @@
 music = \new PianoStaff <<
   \accidentalStyle piano-cautionary
   \new Staff = "up" {
-    \time 3/4
+    \time 6/8
     \tempo 4=60
     \key fs \minor
     << \new Voice {
@@ -31,7 +31,6 @@ music = \new PianoStaff <<
         r2.
       }
 
-      \time 3/4
       \relative cs'' {
         cs2 fs8 es |
         d2 r4 |
@@ -48,19 +47,17 @@ music = \new PianoStaff <<
     \new Voice {
       \voiceTwo
 
-      \time 3/4
       \relative fs' {
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <fs a> <gs b> |
         <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
         <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
-        r2. |
-        r2. |
-        r2. |
+        <cs fs a>8 q <es gs> <fs a> q <gs b> |
+        <fs b> q <g bf> <fs b> <b es> es |
+        d <cs es> <d gs> <cs es> <gs' b d>4 |
       }
 
       \relative a' {
-        \tempo 4=120
         <a a'>8 <cs cs'> <a a'> r <cs cs'>4 |
         <gs gs'>8 <b b'> <gs gs'> r <b b'>4 |
         r2.
@@ -72,7 +69,6 @@ music = \new PianoStaff <<
         r2.
       }
 
-      \time 3/4
       \tempo 4=60
       \relative fs' {
         <fs a>8 q <es gs> <fs a> q <es gs> |
@@ -115,16 +111,16 @@ music = \new PianoStaff <<
   \new Staff = "down" {
     \clef "bass"
     \relative fs,, {
-      \time 3/4
+      \time 6/8
       \key fs \minor
-      fs4 <fs'' a>8 <es gs> <cs b'>4 |
+      fs4 <fs'' a>8 <es gs> <cs a'>4 |
       b, <b'' d>8 <fs b> <d fs>4 |
       es, <gs' cs fs> <gs b> |
       fs, <a' cs> <d, fs a> |
 
       fs, <a' cs> <cs es> |
       b,, <fs'' b> <a d> |
-      cs,, <gs'' cs> <b gs'> |
+      cs,,8 <gs'' cs> q <b gs'> <b es gs>4 |
     }
 
     \relative a {
@@ -151,7 +147,6 @@ music = \new PianoStaff <<
    }
 
     \relative fs {
-      \time 3/4
       % \key fs \minor
       <fs a cs>8 cs fs,, cs' <es' gs>4 |
       % <fs fs' a cs>2. |
