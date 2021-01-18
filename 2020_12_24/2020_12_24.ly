@@ -19,30 +19,6 @@ music = \new PianoStaff <<
         d2 b'8 a |
         gs4 b es |
       }
-
-      \relative a'' {
-        r2.
-        r2.
-        r2.
-        r2.
-        r2.
-        r2.
-        r2.
-        r2.
-      }
-
-      \relative cs'' {
-        cs2 fs8 es |
-        d2 r4 |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
-      }
-
-
     } \\
     \new Voice {
       \voiceTwo
@@ -56,20 +32,33 @@ music = \new PianoStaff <<
         <fs b> q <g bf> <fs b> <b es> es |
         d <cs es> <d gs> <cs es> <gs' b d>4 |
       }
+    } >>
 
-      \relative a' {
-        <a a'>8 <cs cs'> <a a'> r <cs cs'>4 |
-        <gs gs'>8 <b b'> <gs gs'> r <b b'>4 |
-        r2.
-        r2.
+    \relative a' {
+      <a a'>16 <cs cs'> <a a'> r <cs cs'>8 <gs gs'>16 <b b'> <gs gs'> r <b b'>8 |
+      <fs fs'>16 <a a'> <fs fs'> r <a a'>8 q r <f f'> |
+      r <f f'> r <e e'> r <e e'> |
 
-        r2.
-        r2.
-        r2.
-        r2.
+      r2.
+      r2.
+      r2.
+    }
+
+    << \new Voice {
+      \voiceOne
+      \relative cs'' {
+        cs2 fs8 es |
+        d2 r4 |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
+        r2. |
       }
-
-      \tempo 4=60
+    } \\
+    \new Voice {
+      \voiceTwo
       \relative fs' {
         <fs a>8 q <es gs> <fs a> q <es gs> |
         <fs b>8 q r2 |
@@ -80,7 +69,8 @@ music = \new PianoStaff <<
         r2. |
         r2. |
       }
-    } >>
+    }
+  >> 
 
     % Middle Section.
     \time 4/4
@@ -125,15 +115,13 @@ music = \new PianoStaff <<
 
     \relative a {
       % \key a \major
-      <a cs e a>2 <cs e gs cs>4 |
-      <e, gs cs e>2 <b' d fs b>4 |
-      <d, fs b d>2 <a' d f a>4 |
-      <f a d f>2 <d f gs b>4 |
+      <a a'>8 <cs e> <cs e a> <gs gs'> <cs e> <cs e gs> |
+      <fs, fs'> <a d> <a d fs> <f f'> <a d> <a d f> |
+      <f f'> <b d> <gs b d> q <f gs b>4 |
 
-      <a cs e a>2 <cs e gs cs>4 |
-      <e, gs cs e>2 <b' d fs b>4 |
-      <d, fs b d>2 <a' d f a>4 |
-      <gs b d f>2 <f gs b d>4 |
+      <a a'>8 <cs e> <cs e a> <gs gs'> <cs e> <cs e gs> |
+      <fs fs'> <a d> <a d fs> <f f'> <a d> <a d f> |
+      <f f'> <b d> <gs b d> q <f gs b>4 |
 
       % <a cs e a>4 <cs, cs'' e gs cs> |
       % <e' gs cs e gs> <d, b'' d fs b> |
