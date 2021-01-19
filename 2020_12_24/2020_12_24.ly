@@ -39,9 +39,9 @@ music = \new PianoStaff <<
       <fs fs'>16 <a a'> <fs fs'> r <a a'>8 q r <f f'> |
       r <f f'> r <e e'> r <e e'> |
 
-      r2.
-      r2.
-      r2.
+      <a a'>16 <cs cs'> <a a'> r <cs cs'>8 <gs gs'>16 <b b'> <gs gs'> r <b b'>8 |
+      <fs fs'>16 <a a'> <fs fs'> r <a a'>8 <f f'>16 <a a'> <f f'> r <a a'>8 |
+      <f f'>16 <a a'> <f f'> r <a a'>8 q <gs gs'> <f gs b d> |
     }
 
     << \new Voice {
@@ -78,14 +78,13 @@ music = \new PianoStaff <<
     \tempo 4=80
     \relative e'' {
       <e c'>8 q q q q <e e'> <e d'> <e c'> |
-      r1 |
-      r1 |
-      r1 |
-      r1 |
+      <d b'> q q q q <d d'> <d c'> <d b'> |
+      <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
+      <b d> <b e> <b d> <b f> <b d> <b g> <b d> <b gs> |
 
-      r1 |
-      r1 |
-      r1 |
+      <e c'>8 q q q q <e e'> <e d'> <e c'> |
+      <d b'> q q q q <d d'> <d c'> <d b'> |
+      <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
 
       % <c e g c>1 |
       % <b d f g>1 |
@@ -95,6 +94,9 @@ music = \new PianoStaff <<
       % <c c' e g>1 |
       % <g b' f' g> |
       % <b b' f gs> |
+    }
+
+    \relative a' {
     }
   }
 
@@ -120,18 +122,8 @@ music = \new PianoStaff <<
       <f f'> <b d> <gs b d> q <f gs b>4 |
 
       <a a'>8 <cs e> <cs e a> <gs gs'> <cs e> <cs e gs> |
-      <fs fs'> <a d> <a d fs> <f f'> <a d> <a d f> |
+      <fs, fs'> <a d> <a d fs> <f f'> <a d> <a d f> |
       <f f'> <b d> <gs b d> q <f gs b>4 |
-
-      % <a cs e a>4 <cs, cs'' e gs cs> |
-      % <e' gs cs e gs> <d, b'' d fs b> |
-      % <b' fs' b d fs> <f a' d f a> |
-      % <d' a' d f a> <d, b'' d f gs> |
-
-      % <a' a' cs e a>4 <cs, cs'' e gs cs> |
-      % <e' gs cs e gs> <d, b'' d fs b> |
-      % <b' fs' b d fs> <f a' d f a> |
-      % <f b' d f gs>2 |
    }
 
     \relative fs {
@@ -170,15 +162,23 @@ music = \new PianoStaff <<
       f'8 e d r a4 gs |
 
       \key a \minor
-      <a a' c e a>2 <c, c'' e gs c> |
-      <e' gs c e gs> <d, b'' d f b> |
-      <b' f' b d f> <f a' d f a> |
-      <d' a' d f a> <d, b'' d f gs> |
+      <a a'>4 <c e> <gs gs'> <c e> |
+      <f, f'> <a d> <e e'> <a b> |
+      <e e'> <gs b> <gs b d> <d f gs> |
 
-      <a' a' c e a> <c, c'' e gs c> |
-      <e' gs c e gs> <d, b'' d f b> |
-      <b' f' b d f> <f a' d f a> |
-      <f b' d f gs>1 |
+      <a' a'>4 <c e> <gs gs'> <c e> |
+      <f, f'> <a d> <e e'> <a b> |
+      <e e'> <gs b> <gs b d> <d f gs> |
+
+      % <a a' c e a>2 <c, c'' e gs c> |
+      % <e' gs c e gs> <d, b'' d f b> |
+      % <b' f' b d f> <f a' d f a> |
+      % <d' a' d f a> <d, b'' d f gs> |
+
+      % <a' a' c e a> <c, c'' e gs c> |
+      % <e' gs c e gs> <d, b'' d f b> |
+      % <b' f' b d f> <f a' d f a> |
+      % <f b' d f gs>1 |
 
       \time 2/4
       \key d \major
