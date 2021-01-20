@@ -48,26 +48,26 @@ music = \new PianoStaff <<
       \voiceOne
       \relative cs'' {
         cs2 fs8 es |
-        d2 r4 |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
+        d2 fs8 es |
+        d8 cs cs2 |
+        b8 as a es gs4 |
+        cs2 fs8 es |
+        d2 b'8 a |
+        gs4 es8 d cs4 |
+        fs2. |
       }
     } \\
     \new Voice {
       \voiceTwo
       \relative fs' {
-        <fs a>8 q <es gs> <fs a> q <es gs> |
-        <fs b>8 q r2 |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
-        r2. |
+        <fs a>8 q <es gs> <fs a> q <gs b> |
+        <fs b> q <g bf> <fs b> <fs a> <gs b> |
+        <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
+        <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
+        <cs fs a>8 q <es gs> <fs a> q <gs b> |
+        <fs b> q <g bf> <fs b> <b es> es |
+        d <cs es> <b cs> <a b> <gs b> <g bf> |
+        <fs a>2. |
       }
     }
   >> 
@@ -129,7 +129,6 @@ music = \new PianoStaff <<
     \relative fs {
       % \key fs \minor
       <fs a cs>8 cs fs,, cs' <es' gs>4 |
-      % <fs fs' a cs>2. |
       <b, fs'' d' fs>2. |
       <es gs' cs es> |
       <fs fs' a cs> |
