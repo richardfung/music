@@ -64,7 +64,7 @@ music = \new PianoStaff <<
         <fs b> q <g bf> <fs b> <fs a> <gs b> |
         <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
         <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
-        <cs fs a>8 q <es gs> <fs a> q <gs b> |
+        <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <b es> es |
         d <cs es> <b cs> <a b> <gs b> <g bf> |
         <fs a>2. |
@@ -129,14 +129,14 @@ music = \new PianoStaff <<
     \relative fs {
       % \key fs \minor
       <fs a cs>8 cs fs,, cs' <es' gs>4 |
-      <b, fs'' d' fs>2. |
-      <es gs' cs es> |
-      <fs fs' a cs> |
+      <fs b>8 d fs,, d' <d' es>4 |
+      <cs gs'>8 b gs, b <d' es>4 |
+      <cs fs>8 fs, fs, a <d' fs a>4 |
 
-      <a fs' a cs> |
-      <b a' b d a'> |
-      <cs b' cs es gs> |
-      <fs, a' cs fs a> |
+      <fs a cs>8 cs fs,, cs' <es' gs>4 |
+      <fs b>8 d fs,, d' <d' es>4 |
+      <cs gs'>8 b cs,4 es |
+      <fs' a cs>8 cs fs,2 |
     }
 
     \relative a {
