@@ -85,6 +85,27 @@ music = \new PianoStaff <<
       <e c'>8 q q q q <e e'> <e d'> <e c'> |
       <d b'> q q q q <d d'> <d c'> <d b'> |
       <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
+    }
+
+    \relative a'' {
+      <a a'>8 <c c'> <a a'> r <b b'> <gs gs'> <b b'> r |
+      <f f'> <a a'> <f f'> r <a a'> <e e'> <a a'> r |
+      <e e'> <gs gs'> <e e'> r <d d'> <b b'> <d d'> r |
+
+      <a' a'>8 <c c'> <a a'> r <b b'> <gs gs'> <b b'> r |
+      <f f'> <a a'> <f f'> r <a a'> <e e'> <a a'> r |
+      <e e'> <gs gs'> <e e'> r <d d'> <b b'> <d d'> r |
+    }
+
+    \relative e'' {
+      <e c'>8 q q q q <e e'> <e d'> <e c'> |
+      <d b'> q q q q <d d'> <d c'> <d b'> |
+      <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
+      <b d> <b e> <b d> <b f> <b d> <b g> <b d> <b gs> |
+
+      <e c'>8 q q q q <e e'> <e d'> <e c'> |
+      <d b'> q q q q <d d'> <d c'> <d b'> |
+      <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
 
       % <c e g c>1 |
       % <b d f g>1 |
@@ -139,7 +160,7 @@ music = \new PianoStaff <<
       <fs' a cs>8 cs fs,2 |
     }
 
-    \relative a {
+    \relative c' {
       \time 4/4
       \key c \major
       % <c e g c>1 |
@@ -151,45 +172,36 @@ music = \new PianoStaff <<
       % <g b' f' g> |
       % <b b' f gs> |
 
-      a8 b c r e,4 f |
-      b8 c d r g,4 gs|
-      f'8 e d r a4 gs |
-      e'8 d c r gs2 |
+      c8( d e) r e,4( f) |
+      d'8( e f) r a,4( b) |
+      g'8( f e) r b4( a) |
+      f'8( e d) r f,4( d) |
 
-      a8 b c r e,4 f |
-      b8 c d r g,4 gs|
-      f'8 e d r a4 gs |
+      c'8( d e) r e,4( f) |
+      d'8( e f) r a,4( b) |
+      gs'8( g f) r gs,2 |
+    }
 
-      \key a \minor
+    \relative a, {
+      % \key a \minor
       <a a'>4 <c e> <gs gs'> <c e> |
-      <f, f'> <a d> <e e'> <a b> |
+      <f, f'> <a d> <e e'> <a d> |
       <e e'> <gs b> <gs b d> <d f gs> |
 
       <a' a'>4 <c e> <gs gs'> <c e> |
-      <f, f'> <a d> <e e'> <a b> |
+      <f, f'> <a d> <e e'> <a d> |
       <e e'> <gs b> <gs b d> <d f gs> |
+    }
 
-      % <a a' c e a>2 <c, c'' e gs c> |
-      % <e' gs c e gs> <d, b'' d f b> |
-      % <b' f' b d f> <f a' d f a> |
-      % <d' a' d f a> <d, b'' d f gs> |
+    \relative c' {
+      c8( d e) r e,4( f) |
+      d'8( e f) r a,4( b) |
+      g'8( f e) r b4( a) |
+      f'8( e d) r f,4( d) |
 
-      % <a' a' c e a> <c, c'' e gs c> |
-      % <e' gs c e gs> <d, b'' d f b> |
-      % <b' f' b d f> <f a' d f a> |
-      % <f b' d f gs>1 |
-
-      \time 2/4
-      \key d \major
-      <c' c' e g>2 |
-      <g b' f' g> |
-      <b b' f gs> |
-      <c c' e g> |
-
-      <e c' e g> |
-      <g b' f' g> |
-      <b b' f gs> |
-      <c c' e g> |
+      c'8( d e) r e,4( f) |
+      d'8( e f) r a,4( b) |
+      gs'8( g f) r gs,2 |
     }
 
     \time 5/4
