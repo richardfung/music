@@ -7,32 +7,29 @@ music = \new PianoStaff <<
     \time 6/8
     \tempo 4=60
     \key fs \minor
-    << \new Voice {
-      \voiceOne
+    \relative fs' {
+    % \relative cs'' {
+      <fs a cs>2 <fs a fs'>8 <gs b es> |
+      <fs b d>2 <fs a fs'>8 <gs b es> |
+      <a b d>8 <es b' cs> <gs b cs>2 |
+      <gs b>8 <es a> <cs es gs>2 |
+      <fs a cs>2 <fs a fs'>8 <gs b es> |
+      <fs b d>2 <b es b'>8 <es a>8 |
+      <ds gs>4 <es gs b> <es gs d' es> |
+    }
+    % \new Voice {
+    %   \voiceTwo
 
-      \relative cs'' {
-        cs2 fs8 es |
-        d2 fs8 es |
-        d8 cs cs2 |
-        b8 as a es gs4 |
-        cs2 fs8 es |
-        d2 b'8 a |
-        gs4 b es |
-      }
-    } \\
-    \new Voice {
-      \voiceTwo
-
-      \relative fs' {
-        <fs a>8 q <es gs> <fs a> q <gs b> |
-        <fs b> q <g bf> <fs b> <fs a> <gs b> |
-        <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
-        <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
-        <cs fs a>8 q <es gs> <fs a> q <gs b> |
-        <fs b> q <g bf> <fs b> <b es> es |
-        d <cs es> <d gs> <cs es> <gs' b d>4 |
-      }
-    } >>
+    %   \relative fs' {
+    %     <fs a>8 q <es gs> <fs a> q <gs b> |
+    %     <fs b> q <g bf> <fs b> <fs a> <gs b> |
+    %     <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
+    %     <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
+    %     <cs fs a>8 q <es gs> <fs a> q <gs b> |
+    %     <fs b> q <g bf> <fs b> <b es> es |
+    %     d <cs es> <d gs> <cs es> <gs' b d>4 |
+    %   }
+    % } >>
 
     \relative a' {
       <a a'>16 <cs cs'> <a a'> r <cs cs'>8 <gs gs'>16 <b b'> <gs gs'> r <b b'>8 |
@@ -117,8 +114,34 @@ music = \new PianoStaff <<
       % <b b' f gs> |
     }
 
-    \relative a' {
+    \time 8/8
+    << \new Voice {
+      \voiceOne
+      \relative cs'' {
+%        cs2 fs8 es r2 |
+%        d2 fs8 es |
+%        d8 cs cs2 |
+%        b8 as a es gs4 |
+%        cs2 fs8 es |
+%        d2 b'8 a |
+%        gs4 es8 d cs4 |
+%        fs2. |
+      }
+    } \\
+    \new Voice {
+      \voiceTwo
+      \relative fs' {
+%        <fs a>8 q <es gs> <fs a> q <gs b> |
+%        <fs b> q <g bf> <fs b> <fs a> <gs b> |
+%        <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
+%        <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
+%        <fs a>8 q <es gs> <fs a> q <gs b> |
+%        <fs b> q <g bf> <fs b> <b es> es |
+%        d <cs es> <b cs> <a b> <gs b> <g bf> |
+%        <fs a>2. |
+      }
     }
+  >> 
   }
 
   \new Staff = "down" {
@@ -126,10 +149,10 @@ music = \new PianoStaff <<
     \relative fs,, {
       \time 6/8
       \key fs \minor
-      fs4 <fs'' a>8 <es gs> <cs a'>4 |
-      b, <b'' d>8 <fs b> <d fs>4 |
+      fs8 <fs'' a> q <es gs> <cs a'>4 |
+      b,8 <b'' d> q <fs b> <d fs>4 |
       es, <gs' cs fs> <gs b> |
-      fs, <a' cs> <d, fs a> |
+      fs, <a' cs>8 q <d, fs a>4 |
 
       fs, <a' cs> <cs es> |
       b,, <fs'' b> <a d> |
@@ -204,23 +227,22 @@ music = \new PianoStaff <<
       gs'8( g f) r gs,2 |
     }
 
-    \time 5/4
     \key fs \minor
     \relative fs {
-      <fs fs' a cs>2. <c' c' e g>2 |
-      <b fs'' d' fs>2. <g b' f' g>2 |
-      <es gs' cs es>2. <b b' f gs>2 |
-      <fs' fs' a cs>2. <c' c' e g>2 |
+      <fs fs' a cs>2. <c' c' e g>4 |
+      <b fs'' d' fs>2. <g b' f' g>4 |
+      <es gs' cs es>2. <b b' f gs>4 |
+      <fs' fs' a cs>2. <c' c' e g>4 |
 
-      <a fs' a cs>2. <e' c' e g>2 |
-      <b a' b d a'>2. <g b' f' g>2 |
-      <cs b' cs es gs>2. <b b' f gs>2 |
-      <fs, a' cs fs a>2. <c c' e g>2 |
+      <a fs' a cs>2. <e' c' e g>4 |
+      <b a' b d a'>2. <g b' f' g>4 |
+      <cs b' cs es gs>2. <b b' f gs>4 |
+      <fs, a' cs fs a>2. <c c' e g>4 |
     }
     \key a \major
-    r2. r2 |
+    r2. r4 |
     \key cs \minor
-    r2. r2 |
+    r2. r4 |
   }
 >>
 
