@@ -6,30 +6,31 @@ music = \new PianoStaff <<
   \new Staff = "up" {
     \time 6/8
     \tempo 4=60
-    \key fs \minor
-    \relative fs' {
-    % \relative cs'' {
-      <fs a cs>2 <fs a fs'>8 <gs b es> |
-      <fs b d>2 <fs a fs'>8 <gs b es> |
-      <a b d>8 <es b' cs> <gs b cs>2 |
-      <gs b>8 <es a> <cs es gs>2 |
-      <fs a cs>2 <fs a fs'>8 <gs b es> |
-      <fs b d>2 <b es b'>8 <es a>8 |
-      <ds gs>4 <es gs b> <es gs d' es> |
-    }
-    % \new Voice {
-    %   \voiceTwo
+    << \new Voice {
+      \voiceOne
+      \key fs \minor
+      \relative cs'' {
+        cs2 fs8 es |
+        d2 fs8 es |
+        d cs cs2 |
+        b8 a es fs gs4 |
+        cs2 fs8 es |
+        d2 b'8 a |
+        gs4 b es |
+      }
+    } \new Voice {
+      \voiceTwo
 
-    %   \relative fs' {
-    %     <fs a>8 q <es gs> <fs a> q <gs b> |
-    %     <fs b> q <g bf> <fs b> <fs a> <gs b> |
-    %     <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
-    %     <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
-    %     <cs fs a>8 q <es gs> <fs a> q <gs b> |
-    %     <fs b> q <g bf> <fs b> <b es> es |
-    %     d <cs es> <d gs> <cs es> <gs' b d>4 |
-    %   }
-    % } >>
+      \relative fs' {
+        <fs a>8 q <es gs> <fs a> q <gs b> |
+        <fs b> q <g bf> <fs b> <fs a> <gs b> |
+        <a b> <es b'> <gs b>4 <g bf> |
+        gs8 fs cs d <cs es>4 |
+        <fs a>8 q <es gs> <fs a> q <gs b> |
+        <fs b> q <g bf> <fs b> <b es> es |
+        d4 <es gs> <gs b d>4 |
+      }
+    } >>
 
     \relative a' {
       <a a'>16 <cs cs'> <a a'> r <cs cs'>8 <gs gs'>16 <b b'> <gs gs'> r <b b'>8 |
@@ -66,11 +67,19 @@ music = \new PianoStaff <<
         d <cs es> <b cs> <a b> <gs b> <g bf> |
         <fs a>2. |
       }
+    } >>
+
+    % Transition to middle section.
+    \relative fs' {
+      <fs a fs'>2. |
+      q |
+      <g b g'> |
+
+      \time 4/4
+      q1 |
     }
-  >> 
 
     % Middle Section.
-    \time 4/4
     \key c \major
     \tempo 4=80
     \relative e'' {
@@ -149,14 +158,14 @@ music = \new PianoStaff <<
     \relative fs,, {
       \time 6/8
       \key fs \minor
-      fs8 <fs'' a> q <es gs> <cs a'>4 |
-      b,8 <b'' d> q <fs b> <d fs>4 |
+      fs4 <fs'' a>8 <es gs> <cs a'>4 |
+      b,4 <b'' d>8 <fs b> <d fs>4 |
       es, <gs' cs fs> <gs b> |
-      fs, <a' cs>8 q <d, fs a>4 |
+      fs, <d' fs a>2 |
 
-      fs, <a' cs> <cs es> |
+      fs,4 <a' cs> <cs es> |
       b,, <fs'' b> <a d> |
-      cs,,8 <gs'' cs> q <b gs'> <b es gs>4 |
+      cs,,4 <gs'' cs>8 <b gs'> <b es gs>4 |
     }
 
     \relative a {
@@ -183,6 +192,17 @@ music = \new PianoStaff <<
       <fs' a cs>8 cs fs,2 |
     }
 
+    % Transition to middle section.
+    \relative fs {
+      <fs a cs>8 cs fs,2 |
+      <fs' a d>8 d fs,2 |
+      <g' b d>8 d g,4 d' |
+
+      \time 4/4
+      <g b d>8 d g, d' g, d' g4 |
+    }
+
+    % Middle section.
     \relative c' {
       \time 4/4
       \key c \major
