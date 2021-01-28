@@ -24,7 +24,7 @@ music = \new PianoStaff <<
       \relative fs' {
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <fs a> <gs b> |
-        <a b> <es b'> <gs b>4 <g bf> |
+        <a b> <es b'> <gs b>8 q <g bf>4 |
         gs8 fs cs d <cs es>4 |
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <b es> es |
@@ -71,22 +71,22 @@ music = \new PianoStaff <<
 
     % Transition to middle section.
     \relative fs' {
-      <fs a fs'>2. |
-      q |
-      <g b g'> |
+      <fs a fs'>4 ^"accel." q8 q q4 |
+      q8 q q4 q8 q |
+      <g b g'>4 q8 q q4 |
 
       \time 4/4
-      q1 |
+      q8 q <b d g b> q <d g b d> q <f g b d>4 |
     }
 
     % Middle Section.
     \key c \major
     \tempo 4=80
-    \relative e'' {
+    \relative e''' {
       <e c'>8 q q q q <e e'> <e d'> <e c'> |
       <d b'> q q q q <d d'> <d c'> <d b'> |
       <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
-      <b d> <b e> <b d> <b f> <b d> <b g> <b d> <b gs> |
+      <b d> <b e> <b d> <b f'> <b d> <b g'> <b d> <b gs'> |
 
       <e c'>8 q q q q <e e'> <e d'> <e c'> |
       <d b'> q q q q <d d'> <d c'> <d b'> |
@@ -94,16 +94,16 @@ music = \new PianoStaff <<
     }
 
     \relative a'' {
-      <a a'>8 <c c'> <a a'> r <b b'> <gs gs'> <b b'> r |
-      <f f'> <a a'> <f f'> r <a a'> <e e'> <a a'> r |
-      <e e'> <gs gs'> <e e'> r <d d'> <b b'> <d d'> r |
+      r8 <a a'>8 <c c'> <a a'> r <gs gs'> <b b'> <gs gs'> |
+      r <f f'> <a a'> <f f'> r <e e'> <a a'> <e e'> |
+      r <e e'> <gs gs'> <e e'> <b b'> <d d'> <b b'> r |
 
-      <a' a'>8 <c c'> <a a'> r <b b'> <gs gs'> <b b'> r |
-      <f f'> <a a'> <f f'> r <a a'> <e e'> <a a'> r |
-      <e e'> <gs gs'> <e e'> r <d d'> <b b'> <d d'> r |
+      r8 <a' a'>8 <c c'> <a a'> r <gs gs'> <b b'> <gs gs'> |
+      r <f f'> <a a'> <f f'> r <e e'> <a a'> <e e'> |
+      r <e e'> <gs gs'> <e e'> <b b'> <d d'> <b b'> r |
     }
 
-    \relative e'' {
+    \relative e''' {
       <e c'>8 q q q q <e e'> <e d'> <e c'> |
       <d b'> q q q q <d d'> <d c'> <d b'> |
       <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
@@ -229,11 +229,11 @@ music = \new PianoStaff <<
       % \key a \minor
       <a a'>4 <c e> <gs gs'> <c e> |
       <f, f'> <a d> <e e'> <a d> |
-      <e e'> <gs b> <gs b d> <d f gs> |
+      <e e'> <gs b> <d' f gs> <b d f> |
 
-      <a' a'>4 <c e> <gs gs'> <c e> |
+      <a a'>4 <c e> <gs gs'> <c e> |
       <f, f'> <a d> <e e'> <a d> |
-      <e e'> <gs b> <gs b d> <d f gs> |
+      <e e'> <gs b> << \voiceTwo <d' f gs>2 \\ \voiceOne \tuplet 3/2 { bf'4--( b-- c--) } >> |
     }
 
     \relative c' {
