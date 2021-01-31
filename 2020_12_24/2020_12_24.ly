@@ -130,29 +130,31 @@ music = \new PianoStaff <<
 
     % Ending.
     \time 8/8
-    \tempo 4=60
+    \tempo 4=70
     << \new Voice {
       \voiceOne
       \key fs \minor
       \relative cs'' {
-        cs2 fs8 es c4 |
-        d2 fs8 es b8 cs |
-        d cs cs2 b8 gs |
-        b8 a es fs gs8 b4 c8 |
-       %  cs2 fs8 es |
-       %  d2 b'8 a |
-       %  gs4 b es |
-      }% 
+        cs2 fs8 es c g |
+        d'2 fs8 es b8 cs |
+        d cs cs2 gs8 es |
+        b' a es fs gs b( g) c--( |
+
+        cs2) fs8 es c4 |
+        d2 b'8 a g4 |
+        gs b es d |
+      }
     } \new Voice {
       \voiceTwo
       \relative fs' {
-        <fs a>8 q <es gs> <fs a> q <gs b> <e g>4 |
+        <fs a>8 q <es gs> <fs a> q <gs b> <e g> c |
         <fs b>8 q <g bf> <fs b> <fs a> <gs b> <f g>4 |
-        <a b>8 <es b'> <gs b>8 q <g bf>4 <f gs>8 <d f> |
-        gs fs cs d <cs es>8 <c e>4 <g' b>8 |
-        % <fs a>8 q <es gs> <fs a> q <gs b> |
-        % <fs b> q <g bf> <fs b> <b es> es |
-        % d4 <es gs> <gs b d>4 |
+        <a b>8 <es b'> <gs b>8 q <g bf> <fs a> es d |
+        gs fs cs d <cs es>8 <c e> q <g' b> |
+
+        <fs a> q <es gs> <fs a> q <gs b> <e g>4 |
+        <fs b>8 q <g bf> <fs b> <b es> q <b f'> cs |
+        <d es> q <d es gs> q <gs b d> q <es gs b> q |
       }
     } >>
   }
