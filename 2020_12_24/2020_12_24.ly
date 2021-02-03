@@ -137,8 +137,8 @@ music = \new PianoStaff <<
       \relative cs'' {
         cs2 fs8 es c g |
         d'2 fs8 es b8 cs |
-        d cs cs2 gs8 es |
-        b' a es fs gs b( g) c--( |
+        d cs cs2 gs8 f |
+        b a es fs gs b( g) c--( |
 
         cs2) fs8 es c4 |
         d2 b'8 a g4 |
@@ -149,7 +149,7 @@ music = \new PianoStaff <<
       \relative fs' {
         <fs a>8 q <es gs> <fs a> q <gs b> <e g> c |
         <fs b>8 q <g bf> <fs b> <fs a> <gs b> <f g>4 |
-        <a b>8 <es b'> <gs b>8 q <g bf> <fs a> es d |
+        <a b>8 <es b'> <gs b>8 q <g bf> <fs a> f d |
         gs fs cs d <cs es>8 <c e> q <g' b> |
 
         <fs a> q <es gs> <fs a> q <gs b> <e g>4 |
@@ -239,7 +239,7 @@ music = \new PianoStaff <<
 
       <a a'>4 <c e> <gs gs'> <c e> |
       <f, f'> <a d> <e e'> <a d> |
-      <e e'> <gs b> << \voiceTwo <d' f gs>2 \\ \voiceOne \tuplet 3/2 { bf'4--( b-- c--) } >> |
+      <e e'> <gs b> << \voiceTwo <d' f gs>2 \\ \voiceOne { bf'4--( b--) } >> |
     }
 
     \relative c' {
@@ -260,11 +260,21 @@ music = \new PianoStaff <<
     r1 |
 
     \key fs \minor
-    \relative fs, {
-      <fs fs' a cs>2. <c' c' e g>4 |
-      <b fs' d' fs>2. <g b f' g>4 |
-      <es gs cs es>2. <b b' f gs>4 |
-      <fs' fs' a cs>2. <c' c' e g>4 |
+    \relative fs {
+      <fs a cs>8 cs fs,, cs' <es' gs>4 <g c>8 <e g> |
+      <fs b> d fs,, d' <d' es>4 <b g'>8 <d f> |
+      <cs gs'>8 b gs, b <d' es> <es gs> <d f> <b d> |
+      <cs fs>8 fs, fs, a <d' fs a>4 g,8 c, |
+
+      % <fs a cs>8 cs fs,, cs' <es' gs>4 |
+      % <fs b>8 d fs,, d' <d' es>4 |
+      % <cs gs'>8 b cs,4 es |
+      % <fs' a cs>8 cs fs,2 |
+
+      % <fs fs' a cs>2. <c' c' e g>4 |
+      % <b fs' d' fs>2. <g b f' g>4 |
+      % <es gs cs es>2. <b b' f gs>4 |
+      % <fs' fs' a cs>2. <c' c' e g>4 |
 
       <a fs' a cs>2. <e' c' e g>4 |
       <b a' b d a'>2. <g b' f' g>4 |
