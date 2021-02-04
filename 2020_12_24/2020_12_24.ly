@@ -140,7 +140,7 @@ music = \new PianoStaff <<
         d cs cs2 gs8 f |
         b a es fs gs b( g) c--( |
 
-        cs2) fs8 es c4 |
+        cs2) fs8 es g c, |
         d2 b'8 a g4 |
         gs b es d |
       }
@@ -152,7 +152,7 @@ music = \new PianoStaff <<
         <a b>8 <es b'> <gs b>8 q <g bf> <fs a> f d |
         gs fs cs d <cs es>8 <c e> q <g' b> |
 
-        <fs a> q <es gs> <fs a> q <gs b> <e g>4 |
+        <fs a> q <es gs> <fs a> q <gs b> <g c> g |
         <fs b>8 q <g bf> <fs b> <b es> q <b f'> cs |
         <d es> q <d es gs> q <gs b d> q <es gs b> q |
       }
@@ -264,7 +264,10 @@ music = \new PianoStaff <<
       <fs a cs>8 cs fs,, cs' <es' gs>4 <g c>8 <e g> |
       <fs b> d fs,, d' <d' es>4 <b g'>8 <d f> |
       <cs gs'>8 b gs, b <d' es> <es gs> <d f> <b d> |
-      <cs fs>8 fs, fs, a <d' fs a>4 g,8 c, |
+      <cs fs>8 fs, fs, a <d' fs a>4 g,8 c,( |
+
+      <fs, fs'>8) << { <fs'' a cs>8 q q q q c' } \\ { cs,4--( d-- ef8-- g--) } >> c,,( |
+      <b b'>8) << { <fs'' a b>8 q q q q <g b> } \\ { d4--( ef-- e8-- f--) } >> g,( |
 
       % <fs a cs>8 cs fs,, cs' <es' gs>4 |
       % <fs b>8 d fs,, d' <d' es>4 |
@@ -276,8 +279,8 @@ music = \new PianoStaff <<
       % <es gs cs es>2. <b b' f gs>4 |
       % <fs' fs' a cs>2. <c' c' e g>4 |
 
-      <a fs' a cs>2. <e' c' e g>4 |
-      <b a' b d a'>2. <g b' f' g>4 |
+      % <a fs' a cs>2. <e' c' e g>4 |
+      % <b a' b d a'>2. <g b' f' g>4 |
       <cs b' cs es gs>2. <b b' f gs>4 |
       <fs, a' cs fs a>2. <c c' e g>4 |
     }
