@@ -157,6 +157,12 @@ music = \new PianoStaff <<
         <d es> q <d es gs> q <gs b d> q <es gs b> q |
       }
     } >>
+
+    \relative es'' {
+      <es gs b d>8 <d es gs b> q <b d es gs> q <gs b d es> q <es gs b d> |
+      q <d es gs b> <es gs b d> <b d es gs> <es gs b d> <gs, b d es> <es' gs b d>
+          <es, gs b d> |
+    }
   }
 
   \new Staff = "down" {
@@ -259,6 +265,7 @@ music = \new PianoStaff <<
     r1 |
     r1 |
 
+    % Ending.
     \key fs \minor
     \relative fs {
       <fs a cs>8 cs fs,, cs' <es' gs>4 <g c>8 <e g> |
@@ -268,6 +275,7 @@ music = \new PianoStaff <<
 
       <fs, fs'>8) << { <fs'' a cs>8 q q q q c' } \\ { cs,4--( d-- ef8-- g--) } >> c,,( |
       <b b'>8) << { <fs'' a b>8 q q q q <g b> } \\ { d4--( ef-- e8-- f--) } >> g,( |
+      <cs, cs'>8) << { <gs'' b cs >8 q q q q <gs b d> q } \\ { ef4-- e-- f-- f8-- } >> |
 
       % <fs a cs>8 cs fs,, cs' <es' gs>4 |
       % <fs b>8 d fs,, d' <d' es>4 |
@@ -281,13 +289,9 @@ music = \new PianoStaff <<
 
       % <a fs' a cs>2. <e' c' e g>4 |
       % <b a' b d a'>2. <g b' f' g>4 |
-      <cs b' cs es gs>2. <b b' f gs>4 |
+      % <cs b' cs es gs>2. <b b' f gs>4 |
       <fs, a' cs fs a>2. <c c' e g>4 |
     }
-    \key a \major
-    r2. r4 |
-    \key cs \minor
-    r2. r4 |
   }
 >>
 
