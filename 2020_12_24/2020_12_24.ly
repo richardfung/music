@@ -161,8 +161,24 @@ music = \new PianoStaff <<
     \relative es'' {
       <es gs b d>8 <d es gs b> q <b d es gs> q <gs b d es> q <es gs b d> |
       q <d es gs b> <es gs b d> <b d es gs> <es gs b d> <gs, b d es> <es' gs b d>
-          <es, gs b d> |
+          q |
     }
+
+    << \new Voice {
+      \voiceOne
+      \relative cs'' {
+        cs4 fs8 es c e cs4 |
+        fs8 es c e cs fs es c |
+        e cs c g e fs4 e8 |
+        c cs4 c8 g e g e |
+        fs4 fs fs r |
+      }
+    } \new Voice {
+      \voiceTwo
+      \relative fs' {
+
+      }
+    } >>
   }
 
   \new Staff = "down" {
@@ -290,7 +306,7 @@ music = \new PianoStaff <<
       % <a fs' a cs>2. <e' c' e g>4 |
       % <b a' b d a'>2. <g b' f' g>4 |
       % <cs b' cs es gs>2. <b b' f gs>4 |
-      <fs, a' cs fs a>2. <c c' e g>4 |
+      % <fs, a' cs fs a>2. <c c' e g>4 |
     }
   }
 >>
