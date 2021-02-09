@@ -56,10 +56,10 @@ music = \new PianoStaff <<
         fs8 es cs2 |
         fs8 es fs es d4~ |
         d4 fs8 es g d |
-        b4 d4 g8 g |
+        b8 d f g b d |
 
         \time 4/4
-        b4 b8 f' b, e b d |
+        f g b f' b, e b d |
       }
     } \\
     \new Voice {
@@ -76,11 +76,10 @@ music = \new PianoStaff <<
         q8 <gs b> <fs a>2 |
         <fs a>8 <gs b> <fs a> <gs b> <fs a>4~ |
         q4 <fs a>8 <gs b> <g b> q |
+        g8 r r2 |
 
-        g4 b4 d8 d |
-        
         \time 4/4
-        f4 f8 f f f f f |
+        r4 f''8 f f f f f |
       }
     } >>
 
@@ -96,7 +95,7 @@ music = \new PianoStaff <<
 
     % Middle Section.
     \key c \major
-    \tempo 4=92
+    \tempo 4=80
     \relative e''' {
       <e c'>8 q q q q <e e'> <e d'> <e c'> |
       <d b'> q q q q <d d'> <d c'> <d b'> |
@@ -237,13 +236,13 @@ music = \new PianoStaff <<
 
     % Transition to middle section.
     \relative fs {
-      <fs a cs>8 cs fs,2 |
-      <fs' a cs>8 cs <fs a cs> cs fs,4~ |
-      fs4 <fs' a cs>8 cs <g' b d> d |
-      g,2. |
+      <fs a cs>8 cs fs,4 cs' |
+      <fs a cs>8 cs <fs a cs> cs fs,4 |
+      d' <fs a d>8 d <g b d> d |
+      g,4 d' f |
 
       \time 4/4
-      d'4 g a b |
+      g b b2 |
     }
 
 %     \relative fs {
