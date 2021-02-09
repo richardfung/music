@@ -131,15 +131,6 @@ music = \new PianoStaff <<
       <b d> <b e> <b d> <b f> <gs b> <gs c> <gs b> <gs d> |
       <f gs> <f a> <f gs> <f b> <d f> <d g> <d f> <d gs> |
       <b d> <b e> <b d> <b f> <gs b> <b d>~ <f gs b d>4 |
-
-      % <c e g c>1 |
-      % <b d f g>1 |
-      % <b d f gs>1 |
-      % <b d f gs>1 |
-
-      % <c c' e g>1 |
-      % <g b' f' g> |
-      % <b b' f gs> |
     }
 
     % Ending.
@@ -231,7 +222,7 @@ music = \new PianoStaff <<
       <fs a cs>8 cs fs,, cs' <es' gs>4 |
       <fs b>8 d fs,, d' <d' es>4 |
       <cs gs'>8 b cs,4 es |
-      <fs' a cs>8 cs fs,2 |
+      <fs' a cs>8 cs fs,4 cs' |
     }
 
     % Transition to middle section.
@@ -244,15 +235,6 @@ music = \new PianoStaff <<
       \time 4/4
       g b b2 |
     }
-
-%     \relative fs {
-%       <fs a cs>8 cs fs,4 <fs' a cs>8 cs |
-%       fs,4 <fs' a d>8 d fs,4 |
-%       <g' b d>8 d g,4 <g' b d>8 d |
-% 
-%       \time 4/4
-%       <f b d>8 d g, d' g, d' <f b d>4 |
-%     }
 
     % Middle section.
     \relative c' {
