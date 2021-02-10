@@ -121,16 +121,16 @@ music = \new PianoStaff <<
       <e c'>8 ^"a tempo" q q q q <e e'> <e d'> <e c'> |
       <d b'> q q q q <d d'> <d c'> <d b'> |
       <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
-      <b d> <b e> <b d> <b f> <b d> <b g> <b d> <b gs> |
+      <b d> <b e> <b d> <b f'> <b d> <b g'> <b d> <b gs'> |
 
       <e c'>8 q q q q <e e'> <e d'> <e c'> |
       <d b'> q q q q <d d'> <d c'> <d b'> |
       <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
 
       % Transition to ending
-      <b d> <b e> <b d> <b f> <gs b> <gs c> <gs b> <gs d> |
+      <b d> <b e> <b d> <b f'> <gs b> <gs c> <gs b> <gs d'> |
       <f gs> <f a> <f gs> <f b> <d f> <d g> <d f> <d gs> |
-      <b d> <b e> <b d> <b f> <gs b> <b d>~ <f gs b d>4 |
+      <b d> <b e> <b d> <b f'> <gs b> <b d>~ <f gs b d>4 |
     }
 
     % Ending.
@@ -152,7 +152,7 @@ music = \new PianoStaff <<
     } \new Voice {
       \voiceTwo
       \relative fs' {
-        <fs a>8 q <es gs> <fs a> q <gs b> <e g> c |
+        <fs a>8 q <es gs> <fs a> q <gs b> <e g> e |
         <fs b>8 q <g bf> <fs b> <fs a> <gs b> <f g>4 |
         <a b>8 <es b'> <gs b>8 q <g bf> <fs a> f d |
         gs fs cs d <cs es>8 <c e> q <g' b> |
@@ -176,12 +176,16 @@ music = \new PianoStaff <<
         fs8 es c e cs fs es c |
         e cs c g e fs4 e8 |
         c cs4 c8 g e g e |
-        fs4 fs fs r |
+        fs4 fs fs2 |
       }
     } \new Voice {
       \voiceTwo
       \relative fs' {
-
+        <fs a>8 q q <gs b> <e g> q <fs a> q |
+        q <gs b> <e g> q <fs a> q <gs b> <e g> |
+        q <fs a> <e g> <c e> <g c> <a cs> q <g c> |
+        g <fs a> q <e g> <c e> c <c e> c |
+        <a cs> q q q q q q4 |
       }
     } >>
   }
@@ -280,12 +284,11 @@ music = \new PianoStaff <<
       d'8( e f) r a,4( b) |
       gs'8( g f) r gs,2 |
 
+      % Transition to ending.
+      g2 fs |
+      f e |
+      ds d4 cs |
     }
-
-    % Transition to ending.
-    r1 |
-    r1 |
-    r1 |
 
     % Ending.
     \key fs \minor
