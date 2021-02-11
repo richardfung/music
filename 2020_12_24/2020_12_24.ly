@@ -165,8 +165,8 @@ music = \new PianoStaff <<
 
     \relative es'' {
       <es gs b d>8 <d es gs b> q <b d es gs> q <gs b d es> q <es gs b d> |
-      q <d es gs b> <es gs b d> <b d es gs> <es gs b d> <gs, b d es> <es' gs b d>
-          q |
+      q <d es gs b> <es gs b d> <b d es gs> <es gs b d> <gs, b d es>
+          <es' gs b d> q |
     }
 
     << \new Voice {
@@ -300,8 +300,17 @@ music = \new PianoStaff <<
 
       <fs, fs'>8) << { <fs'' a cs>8 q q q q c' } \\ { cs,4--( d-- ef8-- g--) } >> c,,( |
       <b b'>8) << { <fs'' a b>8 q q q q <g b> } \\ { d4--( ef-- e8-- f--) } >> g,( |
-      <cs, cs'>8) << { <gs'' b cs >8 q q q q <gs b d> q } \\ { ef4-- e-- f-- f8-- } >> |
+      <cs, cs'>8) << { <gs'' b cs >8 q q q q <gs b d> q } \\ { ef4-- e-- f-- fs8-- } >> |
 
+      <es gs b d>4 <d es gs b> <b d es gs> <gs b d es> |
+      es8 gs es b' es, d' es, cs' |
+
+      fs,4 c' cs fs, |
+      c' cs fs,8 c' cs fs, |
+      c' cs fs, c' cs fs,4 c8~ |
+      c \ottava -1 fs,4 c8~ c2 |
+      fs,1 |
+      
       % <fs a cs>8 cs fs,, cs' <es' gs>4 |
       % <fs b>8 d fs,, d' <d' es>4 |
       % <cs gs'>8 b cs,4 es |
