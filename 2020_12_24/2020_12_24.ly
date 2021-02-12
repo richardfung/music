@@ -52,14 +52,16 @@ music = \new PianoStaff <<
         cs2 fs8 es |
         d2 b'8 a |
         gs4 es8 d cs4 |
-        fs2. |
-        fs8 es cs2 |
-        fs8 es fs es d4~ |
-        d4 fs8 es g d |
-        b8 d f g b d |
+
+        % Transition to middle section.
+        fs2 fs8 es |
+        \ottava 1
+        fs'8 es cs2 |
+        fs8 es d2 |
+        fs8 es g d cs4 |
 
         \time 4/4
-        f g b f' b, e b d |
+        d e f2 |
       }
     } \\
     \new Voice {
@@ -72,26 +74,18 @@ music = \new PianoStaff <<
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <b es> es |
         d <cs es> <b cs> <a b> <gs b> <g bf> |
-        <fs a>2. |
-        q8 <gs b> <fs a>2 |
-        <fs a>8 <gs b> <fs a> <gs b> <fs a>4~ |
-        q4 <fs a>8 <gs b> <g b> q |
-        g8 r r2 |
+
+        % Transition to middle section.
+        <fs a> q <es gs> <fs a> q <gs b> |
+        \ottava 1
+        <fs' a> <gs b> <fs a> q <es gs> <fs a> |
+        <fs a> <gs b> <fs a> q <es gs> <fs a> |
+        <fs a> <gs b> <g b> q q4 |
 
         \time 4/4
-        r4 f''8 f f f f f |
+        q4 <g b cs> <g b d>2 |
       }
     } >>
-
-    % Transition to middle section.
-%     \relative fs' {
-%       <fs a fs'>4 q8 q q4 |
-%       q8 q q4 q8 q |
-%       <g b g'>4 q8 q q4 |
-% 
-%       \time 4/4
-%       q8 q <b d g b> q <d g b d> q <f g b d>4 |
-%     }
 
     % Middle Section.
     \key c \major
@@ -128,6 +122,7 @@ music = \new PianoStaff <<
       <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
 
       % Transition to ending
+      \ottava 0
       <b d> <b e> <b d> <b f'> <gs b> <gs c> <gs b> <gs d'> |
       <f gs> <f a> <f gs> <f b> <d f> <d g> <d f> <d gs> |
       <b d> <b e> <b d> <b f'> <gs b> <b d>~ <f gs b d>4 |
@@ -226,23 +221,19 @@ music = \new PianoStaff <<
       <fs a cs>8 cs fs,, cs' <es' gs>4 |
       <fs b>8 d fs,, d' <d' es>4 |
       <cs gs'>8 b cs,4 es |
-      <fs' a cs>8 cs fs,4 cs' |
-    }
+      <fs' a cs>8 cs fs,4 <fs' a cs>8 cs |
 
-    % Transition to middle section.
-    \relative fs {
-      <fs a cs>8 cs fs,4 cs' |
-      <fs a cs>8 cs <fs a cs> cs fs,4 |
-      d' <fs a d>8 d <g b d> d |
-      g,4 d' f |
+      % Transition to middle section.
+      <fs a cs> cs fs,4 cs' |
+      <fs a cs>8 cs <a' d> fs d4 |
+      <fs a d>8 d <g b d> d <g b d>4 |
 
       \time 4/4
-      g b b2 |
+      q8 q q q q q q q |
     }
 
     % Middle section.
     \relative c' {
-      \time 4/4
       \key c \major
       % <c e g c>1 |
       % <b d f g>1 |
