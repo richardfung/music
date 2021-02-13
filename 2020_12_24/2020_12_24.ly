@@ -55,13 +55,11 @@ music = \new PianoStaff <<
 
         % Transition to middle section.
         fs2 fs8 es |
-        \ottava 1
-        fs'8 es cs2 |
-        fs8 es d2 |
-        fs8 es g d cs4 |
-
-        \time 4/4
-        d e f2 |
+        cs2 fs8 es |
+        d2 fs8 es |
+        gs8 d cs2 |
+        cs8 b g2 |
+        b8 g f2 |
       }
     } \\
     \new Voice {
@@ -76,19 +74,18 @@ music = \new PianoStaff <<
         d <cs es> <b cs> <a b> <gs b> <g bf> |
 
         % Transition to middle section.
-        <fs a> q <es gs> <fs a> q <gs b> |
-        \ottava 1
-        <fs' a> <gs b> <fs a> q <es gs> <fs a> |
-        <fs a> <gs b> <fs a> q <es gs> <fs a> |
-        <fs a> <gs b> <g b> q q4 |
-
-        \time 4/4
-        q4 <g b cs> <g b d>2 |
+        <fs a>4 <es gs>8 <fs a> q <gs b> |
+        <fs a>4 <es gs>8 <fs a> q <gs b> |
+        <fs a>4 <es gs>8 <fs a> q <gs b> |
+        <g b> q q2 |
+        <f g>8 q q2 |
+        <d f>8 q q2 |
       }
     } >>
 
     % Middle Section.
     \key c \major
+    \time 4/4
     \tempo 4=80
     \relative e''' {
       <e c'>8 q q q q <e e'> <e d'> <e c'> |
@@ -221,20 +218,20 @@ music = \new PianoStaff <<
       <fs a cs>8 cs fs,, cs' <es' gs>4 |
       <fs b>8 d fs,, d' <d' es>4 |
       <cs gs'>8 b cs,4 es |
-      <fs' a cs>8 cs fs,4 <fs' a cs>8 cs |
+      fs2 <fs' a cs>8 cs |
 
       % Transition to middle section.
-      <fs a cs> cs fs,4 cs' |
-      <fs a cs>8 cs <a' d> fs d4 |
-      <fs a d>8 d <g b d> d <g b d>4 |
-
-      \time 4/4
-      q8 q q q q q q q |
+      <d fs a d>2 <fs a d>8 d |
+      r2. |
+      r2. |
+      r2. |
+      r2. |
     }
 
     % Middle section.
+    \time 4/4
+    \key c \major
     \relative c' {
-      \key c \major
       % <c e g c>1 |
       % <b d f g>1 |
       % <b d f gs>1 |
@@ -301,21 +298,6 @@ music = \new PianoStaff <<
       c' cs fs, c' cs fs,4 c8~ |
       c \ottava -1 fs,4 c8~ c2 |
       fs,1 |
-      
-      % <fs a cs>8 cs fs,, cs' <es' gs>4 |
-      % <fs b>8 d fs,, d' <d' es>4 |
-      % <cs gs'>8 b cs,4 es |
-      % <fs' a cs>8 cs fs,2 |
-
-      % <fs fs' a cs>2. <c' c' e g>4 |
-      % <b fs' d' fs>2. <g b f' g>4 |
-      % <es gs cs es>2. <b b' f gs>4 |
-      % <fs' fs' a cs>2. <c' c' e g>4 |
-
-      % <a fs' a cs>2. <e' c' e g>4 |
-      % <b a' b d a'>2. <g b' f' g>4 |
-      % <cs b' cs es gs>2. <b b' f gs>4 |
-      % <fs, a' cs fs a>2. <c c' e g>4 |
     }
   }
 >>
