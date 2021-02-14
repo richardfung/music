@@ -57,7 +57,7 @@ music = \new PianoStaff <<
         fs2 fs8 es |
         cs2 fs8 es |
         d2 fs8 es |
-        gs8 d cs2 |
+        g8 d cs2 |
         cs8 b g2 |
         b8 g f2 |
       }
@@ -221,32 +221,23 @@ music = \new PianoStaff <<
       fs2 <fs' a cs>8 cs |
 
       % Transition to middle section.
+      fs,2 <fs' a cs>8 cs |
       <d fs a d>2 <fs a d>8 d |
-      r2. |
-      r2. |
-      r2. |
-      r2. |
+      <g b d> d g, b cs d |
+      b cs d f d f |
+      g b f g a b |
     }
 
     % Middle section.
     \time 4/4
     \key c \major
     \relative c' {
-      % <c e g c>1 |
-      % <b d f g>1 |
-      % <b d f gs>1 |
-      % <b d f gs>1 |
-
-      % <c c' e g>1 |
-      % <g b' f' g> |
-      % <b b' f gs> |
-
       c8( d e) r e,4( f) |
       d'8( e f) r a,4( b) |
       g'8( f e) r b4( a) |
-      f'8( e d) r f,4( d) |
+      f'8( e d) r f,4( d') |
 
-      c'8( d e) r e,4( f) |
+      c8( d e) r e,4( f) |
       d'8( e f) r a,4( b) |
       gs'8( g f) r gs,2 |
     }
