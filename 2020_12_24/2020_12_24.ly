@@ -27,7 +27,7 @@ music = \new PianoStaff <<
         <a b> <es b'> <gs b>8 q <g bf>4 |
         gs8 fs cs d <cs es>4 |
         <fs a>8 q <es gs> <fs a> q <gs b> |
-        <fs b> q <g bf> <fs b> <b es> es |
+        <fs b> q <g bf> <fs b> <b es> q |
         d4 <es gs> <gs b d>4 |
       }
     } >>
@@ -70,7 +70,7 @@ music = \new PianoStaff <<
         <a b> <es b'> <gs b> <g bf> <fs a> <es gs> |
         <e g> <ds fs> <d es> <b d es> <cs es gs>4 |
         <fs a>8 q <es gs> <fs a> q <gs b> |
-        <fs b> q <g bf> <fs b> <b es> es |
+        <fs b> q <g bf> <fs b> <b es> q |
         d <cs es> <b cs> <a b> <gs b> <g bf> |
 
         % Transition to middle section.
@@ -194,7 +194,7 @@ music = \new PianoStaff <<
 
       fs,4 <a' cs> <cs es> |
       b,, <fs'' b> <a d> |
-      cs,,4 <gs'' cs>8 <b gs'> <b es gs>4 |
+      cs,,8 <gs'' cs> q <b gs'> <b es gs> q |
     }
 
     \relative a {
