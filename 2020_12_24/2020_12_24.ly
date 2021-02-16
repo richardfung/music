@@ -28,7 +28,7 @@ music = \new PianoStaff <<
         gs8 fs cs d <cs es>4 |
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <b es> q |
-        d4 <es gs> <gs b d>4 |
+        d4 <d es gs> <gs b d>4 |
       }
     } >>
 
@@ -57,9 +57,9 @@ music = \new PianoStaff <<
         fs2 fs8 es |
         cs2 fs8 es |
         d2 fs8 es |
-        g8 d cs2 |
-        cs8 b g2 |
-        b8 g f2 |
+        g8 d cs4( d) |
+        cs8 b g4( a) |
+        b8 g f4 f |
       }
     } \\
     \new Voice {
@@ -78,8 +78,8 @@ music = \new PianoStaff <<
         <fs a>4 <es gs>8 <fs a> q <gs b> |
         <fs a>4 <es gs>8 <fs a> q <gs b> |
         <g b> q q2 |
-        <f g>8 q q2 |
-        <d f>8 q q2 |
+        <f g>8 q f2 |
+        <d f>8 q d4 d |
       }
     } >>
 
@@ -200,12 +200,12 @@ music = \new PianoStaff <<
     \relative a {
       % \key a \major
       <a a'>8 <cs e> <cs e a> <gs gs'> <cs e> <cs e gs> |
-      <fs, fs'> <a d> <a d fs> <f f'> <a d> <a d f> |
-      <f f'> <b d> <gs b d> q <f gs b>4 |
+      <fs, fs'> <a d> <a d fs> <f f'> <a d> r |
+      <f f'> r <b d f> <gs b d> <f gs b> r |
 
       <a a'>8 <cs e> <cs e a> <gs gs'> <cs e> <cs e gs> |
       <fs, fs'> <a d> <a d fs> <f f'> <a d> <a d f> |
-      <f f'> <b d> <gs b d> q <f gs b>4 |
+      <f f'> <b d> <b d f> <gs b d> q <f gs b d> |
    }
 
     \relative fs {
