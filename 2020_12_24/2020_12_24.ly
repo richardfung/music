@@ -138,8 +138,8 @@ music = \new PianoStaff <<
         b a es fs gs b( g) c--( |
 
         cs2) fs8 es g c, |
-        d2 b'8 a g4 |
-        gs b es d |
+        d2 b'8 a d, cs |
+        gs'4 b es es |
       }
     } \new Voice {
       \voiceTwo
@@ -150,8 +150,8 @@ music = \new PianoStaff <<
         gs fs cs d <cs es>8 <c e> q <g' b> |
 
         <fs a> q <es gs> <fs a> q <gs b> <g c> g |
-        <fs b>8 q <g bf> <fs b> <b es> q <b f'> cs |
-        <d es> q <d es gs> q <gs b d> q <es gs b> q |
+        <fs b>8 q <g bf> <fs b> <b es> q b cs |
+        <d es> q <d es gs> q <gs b d> q q q |
       }
     } >>
 
@@ -177,7 +177,7 @@ music = \new PianoStaff <<
         q <gs b> <e g> q <fs a> q <gs b> <e g> |
         q <fs a> <e g> <c e> <g c> <a cs> q <g c> |
         g <fs a> q <e g> <c e> c <c e> c |
-        <a cs> q q q q q q4 |
+        <a cs> q q q q2 |
       }
     } >>
   }
