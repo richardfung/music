@@ -278,8 +278,8 @@ music = \new PianoStaff <<
       <cs fs>8 fs, fs, a <d' fs a>4 g,8 c,( |
 
       <fs, fs'>8) << { <fs'' a cs>8 q q q q c' } \\ { cs,4--( d-- ef8-- g--) } >> c,,( |
-      <b b'>8) << { <b'' d>8 q q q q q } \\ { d,4--( ef-- e8-- f--) } >> g,( |
-      <cs, cs'>8) << { <b'' cs>8 q q q q <b d> q } \\ { ef,4-- e-- f-- fs8-- } >> |
+      <b b'>8) << { <b'' d>8 q q q q q } \\ { a4--( gs-- es8-- e--) } >> g,( |
+      <cs, cs'>8) << { <b'' cs>8 q q q q <b d> q } \\ { e,4-- es-- gs4.-- } >> |
 
       <es gs b d>4 <d es gs b> <b d es gs> <gs b d es> |
       es8 gs es b' es, d' es, cs' |
