@@ -122,7 +122,7 @@ music = \new PianoStaff <<
       \ottava 0
       <b d> <b e> <b d> <b f'> <gs b> <gs c> <gs b> <gs d'> |
       <f gs> <f a> <f gs> <f b> <d f> <d g> <d f> <d gs> |
-      <b d> <b e> <b d> <b f'> <gs b> <b d>~ <f gs b d>4 |
+      <b d> <b e> <b d> <b f'> <gs b> <gs c> <gs b> <gs d> |
     }
 
     % Ending.
@@ -132,10 +132,10 @@ music = \new PianoStaff <<
       \voiceOne
       \key fs \minor
       \relative cs'' {
-        cs2 fs8 es c g |
+        cs2 fs8 es c-> g |
         d'2 fs8 es b8 cs |
         d cs cs2 gs8 f |
-        b a es fs gs b( g) c--( |
+        b a es fs gs b(-> g) c--( |
 
         cs2) fs8 es g c, |
         d2 b'8 a d, cs |
@@ -164,7 +164,7 @@ music = \new PianoStaff <<
     << \new Voice {
       \voiceOne
       \relative cs'' {
-        cs4 fs8 es c e cs4 |
+        cs4 ^"Agitato" fs8 es c e cs4 |
         fs8 es c e cs fs es c |
         e cs c g e fs4 e8 |
         c cs4 c8 g e g e |
@@ -266,7 +266,7 @@ music = \new PianoStaff <<
       % Transition to ending.
       g2 fs |
       f e |
-      ds d4 cs |
+      ds4 d2 cs4 |
     }
 
     % Ending.
@@ -279,16 +279,16 @@ music = \new PianoStaff <<
 
       <fs, fs'>8) << { <fs'' a cs>8 q q q q c' } \\ { cs,4--( d-- ef8-- g--) } >> c,,( |
       <b b'>8) << { <b'' d>8 q q q q q } \\ { a4--( gs-- es8-- e--) } >> g,( |
-      <cs, cs'>8) << { <b'' cs>8 q q q q <b d> q } \\ { e,4-- es-- gs4.-- } >> |
+      <cs, cs'>8) << { <b'' cs>8 q q q <b d> q q } \\ { e,4--( es-- gs4.--) } >> |
 
-      <es gs b d>4 <d es gs b> <b d es gs> <gs b d es> |
+      <es gs b d>4 ^"accel." <d es gs b> <b d es gs> <gs b d es> |
       es8 gs es b' es, d' es, cs' |
 
-      fs,4 c' cs fs, |
-      c' cs fs,8 c' cs fs, |
-      c' cs fs, c' cs fs,4 c8~ |
+      fs,4( c' cs) fs,( |
+      c' cs) fs,8( c' cs) fs,( |
+      c' cs) fs,( c' cs) fs,4 c8~ |
       c \ottava -1 fs,4 c8~ c2 |
-      fs,1 |
+      << { fs4 fs fs2 } \\ { fs,1 } >>|
     }
   }
 >>
