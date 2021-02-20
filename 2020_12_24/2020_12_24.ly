@@ -57,9 +57,11 @@ music = \new PianoStaff <<
         fs2 fs8 es |
         cs2 fs8 es |
         d2 fs8 es |
-        g8 d cs4( d) |
-        cs8 b g4( a) |
-        b8 g f4 f |
+        g8 d cs( d f g) |
+        f( g b cs) g( b |
+
+        \time 4/4
+        cs d f g b cs d4) |
       }
     } \\
     \new Voice {
@@ -77,11 +79,11 @@ music = \new PianoStaff <<
         <fs a>4 <es gs>8 <fs a> q <gs b> |
         <fs a>4 <es gs>8 <fs a> q <gs b> |
         <fs a>4 <es gs>8 <fs a> q <gs b> |
-        <g b> q q2 |
-        <f g>8 q f2 |
-        <d f>8 q d4 d |
+        <g b> q q4 r4 |
       }
     } >>
+
+    
 
     % Middle Section.
     \key c \major
@@ -225,7 +227,9 @@ music = \new PianoStaff <<
       <d fs a d>2 <fs a d>8 d |
       <g b d> d g, b cs d |
       b cs d f d f |
-      g b f g a b |
+
+      \time 4/4
+      g b f g b d f b, |
     }
 
     % Middle section.
@@ -234,12 +238,20 @@ music = \new PianoStaff <<
     \relative c' {
       c8( d e) r e,4( f) |
       d'8( e f) r a,4( b) |
-      g'8( f e) r b4( a) |
-      f'8( e d) r f,4( d') |
+      a'8( g f) r <b, d>4 b |
+      b'8( a gs) r <gs, f'>4 <b d> |
 
-      c8( d e) r e,4( f) |
-      d'8( e f) r a,4( b) |
-      gs'8( g f) r gs,2 |
+      << \new Voice \relative c' {
+        \voiceOne
+        c8( d e2 d4) |
+        d8( e f2 d4) |
+        gs8( g f2.) |
+      } \new Voice \relative e {
+        \voiceTwo
+        r2 e4( f) |
+        r2 a4( b) |
+        r2 gs2 |
+      } >>
     }
 
     \relative a, {
