@@ -107,7 +107,7 @@ music = \new PianoStaff <<
 
       r8 <a' a'>8 <c c'> <a a'> r <gs gs'> <b b'> <gs gs'> |
       r <f f'> <a a'> <f f'> r <e e'> <a a'> <e e'> |
-      r ^"rit." <e e'> <gs gs'> <e e'> <b b'> <d d'> <b b'> r |
+      r ^"rit." <e e'> <gs gs'> <b b'> <d d'>4 <b b'> |
     }
 
     \relative e''' {
@@ -124,7 +124,7 @@ music = \new PianoStaff <<
       \ottava 0
       <b d> <b e> <b d> <b f'> <gs b> <gs c> <gs b> <gs d'> |
       <f gs> <f a> <f gs> <f b> <d f> <d g> <d f> <d gs> |
-      <b d> <b e> <b d> <b f'> <gs b> <gs c> <gs b> <gs d> |
+      <b d> <b e> <b d> <b f'> <gs b> <gs c> <gs b> <gs d'> |
     }
 
     % Ending.
@@ -244,7 +244,7 @@ music = \new PianoStaff <<
       << \new Voice \relative c' {
         \voiceOne
         c8( d e2 d4) |
-        d8( e f2 d4) |
+        d8( e f2 g4) |
         gs8( g f2.) |
       } \new Voice \relative e {
         \voiceTwo
