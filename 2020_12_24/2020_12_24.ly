@@ -89,18 +89,30 @@ music = \new PianoStaff <<
     \key c \major
     \time 4/4
     \tempo 4=80
-    \relative e''' {
-      <e c'>8 q q q q <e e'> <e d'> <e c'> |
-      <d b'> q q q q <d d'> <d c'> <d b'> |
-      <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
-      <b d> <b e> <b d> <b f'> <b d> <b g'> <b d> <b gs'> |
+    << \new Voice \relative c'''' {
+      \voiceOne
+      \ottava 1
+      c8 c c c c e d c |
+      b b b b b d c b |
+      f g f gs f a f b |
+      d, e d f d g d gs |
 
-      <e c'>8 q q q q <e e'> <e d'> <e c'> |
-      <d b'> q q q q <d d'> <d c'> <d b'> |
-      <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
-    }
+      c c c c c e d c |
+      b b b b b d c b |
+      f g f gs f a f b |
+    } \new Voice \relative e''' {
+      e2 e4 f |
+      d2 d4 e |
+      d8 d d d d d d d |
+      b b b b b b b b |
+
+      e4 d e f |
+      d c d e |
+      d8 d d d d d d d |
+    } >>
 
     \relative a'' {
+      \ottava 0
       r8 <a a'>8 <c c'> <a a'> r <gs gs'> <b b'> <gs gs'> |
       r <f f'> <a a'> <f f'> r <e e'> <a a'> <e e'> |
       r <e e'> <gs gs'> <e e'> <b b'> <d d'> <b b'> r |
@@ -110,16 +122,39 @@ music = \new PianoStaff <<
       r ^"rit." <e e'> <gs gs'> <b b'> <d d'>4 <b b'> |
     }
 
-    \relative e''' {
-      <e c'>8 ^"a tempo" q q q q <e e'> <e d'> <e c'> |
-      <d b'> q q q q <d d'> <d c'> <d b'> |
-      <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
-      <b d> <b e> <b d> <b f'> <b d> <b g'> <b d> <b gs'> |
+    << \new Voice \relative c'''' {
+      \voiceOne
+      \ottava 1
+      c8 c c c c e d c |
+      b b b b b d c b |
+      f g f gs f a f b |
+      d, e d f d g d gs |
 
-      <e c'>8 q q q q <e e'> <e d'> <e c'> |
-      <d b'> q q q q <d d'> <d c'> <d b'> |
-      <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
+      c c c c c e d c |
+      b b b b b d c b |
+      f g f gs f a f b |
+    } \new Voice \relative e''' {
+      e4 d e f |
+      d c d e |
+      d8 d d d d d d d |
+      b b b b b b b b |
 
+      e4 d e f |
+      d c d e |
+      d8 d d d d d d d |
+    } >>
+
+    % \relative e''' {
+    %   <e c'>8 ^"a tempo" q q q q <e e'> <e d'> <e c'> |
+    %   <d b'> q q q q <d d'> <d c'> <d b'> |
+    %   <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
+    %   <b d> <b e> <b d> <b f'> <b d> <b g'> <b d> <b gs'> |
+
+    %   <e c'>8 q q q q <e e'> <e d'> <e c'> |
+    %   <d b'> q q q q <d d'> <d c'> <d b'> |
+    %   <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
+
+    \relative b'' {
       % Transition to ending
       \ottava 0
       <b d> <b e> <b d> <b f'> <gs b> <gs c> <gs b> <gs d'> |
@@ -244,7 +279,7 @@ music = \new PianoStaff <<
       << \new Voice \relative c' {
         \voiceOne
         c8( d e2 d4) |
-        d8( e f2 g4) |
+        d8( e f2 d4) |
         gs8( g f2.) |
       } \new Voice \relative e {
         \voiceTwo
@@ -266,13 +301,13 @@ music = \new PianoStaff <<
     }
 
     \relative c' {
-      c8( d e) r e,4( f) |
-      d'8( e f) r a,4( b) |
-      g'8( f e) r b4( a) |
-      f'8( e d) r f,4( d) |
+      c8( d e) r << { e4-. d-. } \\ { e,-. f-. } >> |
+      d'8( e f) r << { f4-. d-. } \\ { a-. b-. } >> |
+      a'8( g f) r << { f4-. d-. } \\ { d-. b-. } >> |
+      b'8( a gs) r << { f4-. d-. } \\ { gs,-. b-. } >> |
 
-      c'8( d e) r e,4( f) |
-      d'8( e f) r a,4( b) |
+      c8( d e) r << { e( c d4-.) } \\ { e,4( f) } >> |
+      d'8( e f) r << { f( d e4-.) } \\ { a,4( b) } >> |
       gs'8( g f) r gs,2 |
 
       % Transition to ending.
