@@ -13,7 +13,7 @@ music = \new PianoStaff <<
         cs2 fs8 es |
         d2 fs8 es |
         d cs cs2 |
-        b8 a es fs gs4 |
+        b8 a es fs gs c-- |
         cs2 fs8 es |
         d2 b'8 a |
         gs4 b es |
@@ -144,16 +144,6 @@ music = \new PianoStaff <<
       d8 d d d d d d d |
     } >>
 
-    % \relative e''' {
-    %   <e c'>8 ^"a tempo" q q q q <e e'> <e d'> <e c'> |
-    %   <d b'> q q q q <d d'> <d c'> <d b'> |
-    %   <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
-    %   <b d> <b e> <b d> <b f'> <b d> <b g'> <b d> <b gs'> |
-
-    %   <e c'>8 q q q q <e e'> <e d'> <e c'> |
-    %   <d b'> q q q q <d d'> <d c'> <d b'> |
-    %   <d f> <d g> <d f> <d gs> <d f> <d a'> <d f> <d b'> |
-
     \relative b'' {
       % Transition to ending
       \ottava 0
@@ -227,7 +217,7 @@ music = \new PianoStaff <<
       fs4 <fs'' a>8 <es gs> <cs a'>4 |
       b,4 <b'' d>8 <fs b> <d fs>4 |
       es, <gs' cs fs> <gs b> |
-      fs, <d' fs a>2 |
+      fs, d'8 f a g, |
 
       fs,4 <a' cs> <cs es> |
       b,, <fs'' b> <a d> |
@@ -238,7 +228,7 @@ music = \new PianoStaff <<
       % \key a \major
       <a a'>8 <cs e> <cs e a> <gs gs'> <cs e> <cs e gs> |
       <fs, fs'> <a d> <a d fs> <f f'> <a d> r |
-      <f f'> r <b d f> <gs b d> <f gs b> r |
+      <f f'> r <b d f> r <gs b d> r |
 
       <a a'>8 <cs e> <cs e a> <gs gs'> <cs e> <cs e gs> |
       <fs, fs'> <a d> <a d fs> <f f'> <a d> <a d f> |
@@ -250,7 +240,7 @@ music = \new PianoStaff <<
       <fs a cs>8 cs fs,, cs' <es' gs>4 |
       <fs b>8 d fs,, d' <d' es>4 |
       <cs gs'>8 b gs, b <d' es>4 |
-      <cs fs>8 fs, fs, a <d' fs a>4 |
+      <cs fs>8 fs, fs, a << { <fs'' a>4 } \\ { d8( cs) } >> |
 
       <fs a cs>8 cs fs,, cs' <es' gs>4 |
       <fs b>8 d fs,, d' <d' es>4 |
