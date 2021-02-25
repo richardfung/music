@@ -24,7 +24,7 @@ music = \new PianoStaff <<
       \relative fs' {
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <fs a> <gs b> |
-        <a b> <es b'> <gs b>8 q <g bf>4 |
+        <a b> <es b'> <gs b>8 q <g bf> <fs a> |
         gs8 fs cs d <cs es>4 |
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <b es> q |
@@ -219,7 +219,7 @@ music = \new PianoStaff <<
       es, <gs' cs fs> <gs b> |
       fs, d'8 f a g, |
 
-      fs,4 <a' cs> <cs es> |
+      fs4 <a' cs> <cs es> |
       b,, <fs'' b> <a d> |
       cs,,8 <gs'' cs> q <b gs'> <b es gs> q |
     }
