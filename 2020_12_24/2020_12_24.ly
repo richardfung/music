@@ -15,7 +15,7 @@ music = \new PianoStaff <<
         d cs cs2 |
         b8 a es fs gs c-- |
         cs2 fs8 es |
-        d2 b'8 a |
+        d2 a'8 es |
         gs4 b es |
       }
     } \new Voice {
@@ -28,7 +28,7 @@ music = \new PianoStaff <<
         gs8 fs cs d <cs es>4 |
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <b es> q |
-        d4 <d es gs> <gs b d>4 |
+        q q <d es gs> q <gs b d> q |
       }
     } >>
 
