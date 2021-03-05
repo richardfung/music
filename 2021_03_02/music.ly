@@ -1,10 +1,13 @@
 \version "2.20.0"
 \language "english"
 
+\include "left.ly"
+\include "right.ly"
+
 music = \new PianoStaff <<
   \accidentalStyle piano-cautionary
-  \new Staff = "up" {
-  }
+
+  \right
 
   \new Staff = "down" {
   }
