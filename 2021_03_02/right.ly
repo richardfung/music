@@ -5,8 +5,13 @@ right =
   \relative f' {
     f8( gf df' c ef df |
     gf f f ef ef df) |
-    gf( bf ef d f ef |
+    gf,( bf ef d f ef |
     af gf bf, c f ef) |
+
+    df ef df c af bf |
+    ef f ef d bf d |
+    gf af gf f ef df |
+    f gf f ef df c |
   }
 
   << \new Voice {
