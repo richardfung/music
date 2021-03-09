@@ -4,22 +4,37 @@ right =
   \time 3/4
   \relative f' {
     f8( gf df' c ef df |
-    gf f f ef ef df) |
-    gf,( bf ef d f ef |
+    gf f f ef df c) |
+    gf( bf ef d f ef |
     ef df c bf af gf) |
 
     f8( gf df' c ef df |
-    gf f ef df c b) |
-    gf,( bf ef d f ef |
+    gf f f ef df c) |
+    gf( bf ef d f ef |
     af gf f ef df c) |
 
     \time 2/4
-    \acciaccatura { df16 ef } d8 c af bf |
-    \acciaccatura { ef16 d } ef8 d bf d |
+    \acciaccatura { df16 ef } df8 c af c |
+    \acciaccatura { ef16 f } ef8 d bf d |
     \acciaccatura { gf16 af } gf8 f ef df |
     \acciaccatura { f16 gf } f8 ef df c |
 
+    \acciaccatura { df16 ef } df8 c af c |
+    \acciaccatura { ef16 f } ef8 d bf d |
+    \acciaccatura { gf16 af } gf8 f ef df |
+    c bf af gf |
+
     \time 3/4
+    f8( gf df' c ef df |
+    gf f f ef df c) |
+    gf( bf ef d f ef |
+    ef df c bf af gf) |
+
+    f8( gf df' c ef df |
+    gf f f ef df c) |
+    gf( bf ef d f ef |
+    af gf f ef df c) |
+
     df ef df c af bf |
     ef f ef d bf d |
     gf af gf f ef df |
