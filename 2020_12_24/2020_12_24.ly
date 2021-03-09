@@ -28,7 +28,7 @@ music = \new PianoStaff <<
         gs8 fs cs d <cs es>4 |
         <fs a>8 q <es gs> <fs a> q <gs b> |
         <fs b> q <g bf> <fs b> <b es> q |
-        q q <d es gs> q <gs b d> q |
+        d d <d es gs> q <gs b d> q |
       }
     } >>
 
