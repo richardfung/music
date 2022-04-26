@@ -15,13 +15,13 @@
   }
   \bookpart {
     \header {
-      piece = "Mischief"
+      title = "Mischief"
     }
     \mischief
   }
   \bookpart {
     \header {
-      piece = "Romance"
+      title = "Romance"
     }
     \score {
       \romance
