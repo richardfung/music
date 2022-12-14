@@ -4,11 +4,12 @@
 \parallelMusic intro_one, intro_two {
   \key a \major
   \time 5/4
-  cs8 d e4 a, gs' fs |
+    cs8 d e4 a, gs' fs |
   \clef "bass"
-  cs2 e, fs4 |
+    \time 5/4
+    cs2 e, fs4 |
 
-  b,8 cs d4 g, fs' e |
+  b,8 cs d4 gs, fs' e |
   d'2 fs, gs4 |
 
   a,8 b cs4 fs, e' d |
@@ -52,7 +53,7 @@
   fs4 <b d>4. q8 <a d>4 << {d8 e} \\ {a,4} >> |
   <b, b'> fs' <fs d'> q b |
 
-  <g fs'>4 <fs e'>2 <a b> |
+  <gs fs'>4 <fs e'>2 <a b> |
   r4*5 |
 }
 
@@ -90,25 +91,128 @@
   \ottava 1
   fs8-- a, d fs-- a, d a d fs-- a, fs'-- a, |
   \clef "treble"
-  d4. <a' fs'> r4 q <fs d'> |
+    \key d \major
+    d4. <a' fs'> r4 q <fs d'> |
 
   g'8-- b, e g-- b, e b e g-- b, g'-- b, |
   e4. <b' g'> r4 q <g e'> |
 
   a'8-- cs, d e-- cs d cs d fs-- cs fs-- cs |
-  fs4. <c' a'> r4 q <a fs'> |
+  fs4. <cs' a'> r4 q <a fs'> |
 
   g'8-- a, cs ds-- a cs a cs e-- a, fs'-- a, |
   g8. d' <cs g'>4. r4 q <a ds> |
 
-  fs'8-- g, b e-- g, b d-- g b cs-- g b |
+  fs'8-- g, b e-- g, b d-- g, b cs-- g b |
   g8. b fs' b, e b d cs |
+
+  fs'8-- a, d fs-- a, d a d fs-- a, fs'-- a, |
+  r8*12 |
+
+  g'8-- b, e g-- b, e b e g-- b, g'-- b, |
+  r8*12 |
+
+  b'8-- cs, a'-- cs, af'-- cs, g'-- a, d e d a |
+  r8*12 |
+
+  ds8-- a cs d cs a ds-- a e'-- a, fs'-- a, |
+  r8*12 |
+
+  g'8-- b, cs d cs b d-- fs, g a cs-- fs, |
+  r8*12 |
+
+  \ottava 0
+  bf8-- cs, d e fs-- cs a'-- cs, d e d cs |
+  r8*12 |
+
+  bf'8-- cs, d e fs-- cs a'-- cs, d e d cs |
+  r8*12 |
+
+  bf'8-- cs, d e d cs a'-- cs, d e d cs |
+  r8*12 |
+
+  bf'8-- cs, d e a-- cs, g'-- b, cs d fs-- b, |
+  r8*12 |
+
+  e8-- a, b cs d-- cs b-- a cs-- a e'4-- \fermata |
+  r8*12 |
+
 }
 
 \parallelMusic aa_one, aa_two {
   \time 5/4
-  a4 <d fs>4. q8 <cs fs>4 << {cs4} \\ {fs8 g} >> |
+  a4 <d fs>4. q8 <cs fs>4 << {fs8 g} \\ {cs,4} >> |
   r4*5 |
+
+  <b a'>2 <a fs'> <b e>4 |
+  r4*5 |
+
+  b4 <e g>4. q8 <d g>4 << {g8 a} \\ {d,4} >> |
+  r4*5 |
+
+  b'8 a g4 e8 fs g4 fs |
+  r4*5 |
+
+  fs8 g a g fs4 d8 g b4 |
+  r4*5 |
+
+  e,8 fs g fs e4 cs8 fs a a |
+  r4*5 |
+
+  a8 a a4 d,8 e fs e d4 |
+  r4*5 |
+
+  b8 e g g g g g a b a |
+  r4*5 |
+
+  g8 fs e4 d cs2 |
+  r4*5 |
+
+  a4 <d fs>4. q8 <cs fs>4 << {fs8 g} \\ {cs,4} >> |
+  r4*5 |
+
+  a'8 b cs d cs4 b8 a b4 |
+  r4*5 |
+
+  b,4 <e g>4. q8 <d g>4 << {g8 a} \\ {d,4} >> |
+  r4*5 |
+
+  d'8 cs b a g4 e fs8 fs |
+  r4*5 |
+
+  \time 3/4
+  fs8 g a g fs4 |
+  r4*3 |
+
+  d8 g d' cs b a |
+  r4*3 |
+
+  e8 fs g fs e4 |
+  r4*3 |
+
+  cs8 fs cs' b a g |
+  r4*3 |
+
+  d8 e fs e d cs |
+  r4*3 |
+
+  b8 d a' fs e d |
+  r4*3 |
+
+  b8 d a' fs e d |
+  r4*3 |
+
+  cs8 e b' a << {g4~} \\ {r8 d} >> |
+  r4*3 |
+
+  << {g4 fs2} \\ {e8 d r cs d cs} >> |
+  r4*3 |
+
+  << {e2.} \\ {r8 b cs b a4} >> |
+  r4*3 |
+
+  << {e'2.} \\ {a,4 b cs} >> |
+  r4*3 |
 }
 
 music = \new PianoStaff <<
