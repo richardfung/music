@@ -2,25 +2,84 @@
 \language "english"
 
 \parallelMusic intro_one, intro_two {
-  \key a \major
-  \time 5/4
-    cs8 d e4 a, gs' fs |
+  \key e \major
+  \time 4/4
+  \clef "treble"
+  r1 |
+  \key e \major
+  \time 4/4
   \clef "bass"
-    \time 5/4
-    cs2 e, fs4 |
+  e4~ <e b' e> e' <e b' e> |
 
-  b,8 cs d4 gs, fs' e |
-  d'2 fs, gs4 |
+  e4~ <e b' e>
+    \ottava 1
+    e'( b' |
+  r1 |
 
-  a,8 b cs4 fs, e' d |
-  cs2 e4 fs, d' |
+  cs2 ds2) |
+  r1 |
 
-  cs8 d cs b a4 gs2 |
-  d,2 e4 e2 |
+  e8( fs gs4 b) e,8( fs |
+  \clef "treble"
+  \ottava 1
+  r2. cs'''4( |
+
+  gs4 b) ds,8( fs gs4 |
+  b4) r2. |
+
+  b4) ds,8( fs gs4 b) |
+  r4 b( a) r |
+
+  d,8( fs gs b) cs,( es fs gs) |
+  gs4 fs gs a |
+
+  a8( gs fs cs) e( b a gs) |
+  cs2 <e, a> |
+
+  \ottava 0
+  e8( fs gs b) e,( fs gs b) |
+  \ottava 0
+  cs2( b) |
+
+  ds,8( fs gs b) ds,( fs gs b) |
+  b2( a) |
+
+  d,8( fs gs b) cs,( es fs gs) |
+  gs4( a fs gs) |
+
+  a8( gs fs cs) gs'( fs es cs) |
+  a2 ds, |
+
+  fs8( es ds a) b( cs ds e) |
+  cs2 cs |
+
+  cs8( ds es fs) gs( fs es cs) |
+  ds2 es |
+
+  fs8( es ds a fs' es ds a) |
+  ds2 cs |
+
+  fs'8( es d a fs' es d a) |
+  ds2 cs |
+
+  fs'4~ <fs, a fs'> e'~ <fs, a e'> |
+  \clef "bass"
+  ds2 cs |
+
+  d'4~ <f, a d> cs'~ <f, a cs> |
+  b2 b |
+
+  <e f a b>1( |
+  a1( |
+
+  <d f a>1) |
+  b1) |
 }
 
 \parallelMusic a_one, a_two {
+  \time 5/4
   e4 cs'4. cs8 cs4 cs8 d |
+  \time 5/4
   <a a'>4 e' <e cs'> q a |
 
   e2 cs b4 |
@@ -218,22 +277,18 @@
 music = \new PianoStaff <<
   \accidentalStyle piano-cautionary
   \new Staff = "up" {
-    \relative cs'' \intro_one
+    \relative e' \intro_one
     \relative e' \a_one
     \relative a' \ab_one
-    \break
     \relative fs''' \b_one
-    \break
     \relative a' \aa_one
   }
 
   \new Staff = "down" {
-    \relative cs' \intro_two
+    \relative e, \intro_two
     \relative a, \a_two
     \ab_two
-    \break
     \relative d' \b_two
-    \break
     \aa_two
   }
 >>
